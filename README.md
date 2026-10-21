@@ -48,7 +48,13 @@ Use `npm run watch` to rebuild `theme.css` while editing. Reload the theme in Ob
 
 ## Screenshots
 
-Theme preview screenshots belong in `screenshots/` (16:9, preferably 512 × 288). Add a screenshot before submitting the theme to Obsidian's community directory.
+### Dashboard
+
+![Monokai Pro Octagon displaying a dashboard with the file explorer and calendar](screenshots/main.png)
+
+### Task statuses
+
+![Monokai Pro Octagon task checkbox and status marker styles](screenshots/task-statuses.png)
 
 ## Releasing
 
