@@ -1,0 +1,43 @@
+/* @settings
+name: Monokai Pro Octagon
+id: monokai-pro-octagon
+settings:
+  -
+    id: octagon-accent
+    title: Accent color
+    description: Choose an accent from the Octagon palette
+    type: class-select
+    allowEmpty: false
+    default: octagon-accent-green
+    options:
+      -
+        label: Red
+        value: octagon-accent-red
+      -
+        label: Orange
+        value: octagon-accent-orange
+      -
+        label: Yellow
+        value: octagon-accent-yellow
+      -
+        label: Green
+        value: octagon-accent-green
+      -
+        label: Teal
+        value: octagon-accent-teal
+      -
+        label: Purple
+        value: octagon-accent-purple
+  -
+    id: octagon-colored-headings
+    title: Colorized headings
+    description: Use Octagon colors for heading levels
+    type: class-toggle
+  -
+    id: octagon-rounded-corners
+    title: Rounded corners
+    description: Use softer corners instead of the theme's squared geometry
+    type: class-toggle
+*/
+
+/* stylelint-enable declaration-empty-line-before, no-descending-specificity, property-no-vendor-prefix, selector-attribute-quotes */

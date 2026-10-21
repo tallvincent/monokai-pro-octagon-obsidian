@@ -1,11 +1,14 @@
 {
-    "name": "sample-obsidian-theme",
+    "name": "monokai-pro-octagon-theme",
     "version": "1.0.0",
 	"scripts": {
+		"build": "sass --no-source-map --style=expanded scss/main.scss theme.css",
+		"watch": "sass --no-source-map --style=expanded --watch scss/main.scss:theme.css",
 		"version": "node version-bump.mjs && git add manifest.json versions.json",
-		"lint": "stylelint \"**/*.css\""
+		"lint": "npm run build && stylelint theme.css"
 	},
 	"devDependencies": {
+		"sass": "^1.89.2",
 		"stylelint": "^17.0.0",
 		"stylelint-config-obsidianmd": "^0.1.0"
 	}

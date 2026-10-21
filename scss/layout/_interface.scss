@@ -1,0 +1,32 @@
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+	display: none;
+}
+
+.workspace-tab-header.is-active {
+	box-shadow: inset 0 -2px var(--octagon-accent);
+}
+
+.workspace-leaf.mod-active {
+	--tab-outline-color: var(--octagon-accent);
+}
+
+.menu {
+	padding: var(--size-2-1);
+	border: 1px solid var(--background-modifier-border);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
