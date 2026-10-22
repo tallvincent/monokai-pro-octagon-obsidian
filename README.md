@@ -1,16 +1,20 @@
-<div align="center">
-
 # Monokai Pro Octagon for Obsidian
 
-An Obsidian dark theme based on the Monokai Pro Octagon palette used by Ghostty.
+An Obsidian dark theme based on the Octagon variant of [Monokai Pro](https://monokai.pro/).
 
-</div>
+Monokai Pro Octagon brings a deep blue-gray interface and vivid syntax colors to Obsidian. Choose a palette accent, colorize headings, or switch between squared and rounded corners with the optional [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin.
 
-The theme brings Octagon's deep blue-gray background and vivid syntax colors to Obsidian. Its modular Sass source and embedded [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) options make selected accents and interface details configurable.
+## Screenshots
+
+### Dashboard
+
+![Monokai Pro Octagon displaying a dashboard with the file explorer and calendar](screenshots/main.png)
+
+### Task statuses
+
+![Monokai Pro Octagon task checkbox and status marker styles](screenshots/task-statuses.png)
 
 ## Palette
-
-The palette is based on the [Monokai Pro Octagon Ghostty theme](https://github.com/Kirlovon/monokai-ghostty/blob/main/Monokai%20Pro%20Octagon), which identifies its colors as based on the Monokai Pro color scheme. The Obsidian theme maps the terminal colors to app surfaces, text, accents, links, and syntax highlighting; a few intermediate surface shades are derived from the base background.
 
 | Role | Color |
 | --- | --- |
@@ -25,11 +29,21 @@ The palette is based on the [Monokai Pro Octagon Ghostty theme](https://github.c
 | Selection | `#535763` |
 | Cursor | `#b2b9bd` |
 
-## Install and configure
+## Install
 
-Install the theme from **Settings → Appearance → Themes**, or copy `theme.css` and `manifest.json` into `.obsidian/themes/Monokai Pro Octagon/` in your vault. Select **Monokai Pro Octagon** as the active theme.
+### Community themes
 
-For customization, install and enable the Style Settings community plugin. Open **Settings → Style Settings → Monokai Pro Octagon** to choose an accent color, toggle colored headings, or enable rounded corners.
+Once the theme is available in Obsidian's Community themes, open **Settings → Appearance → Themes → Manage**, search for **Monokai Pro Octagon**, and select **Install**. Then select it as your active theme.
+
+### Manual installation
+
+Create `.obsidian/themes/Monokai Pro Octagon/` in your vault and copy `theme.css` and `manifest.json` into it. In Obsidian, open **Settings → Appearance** and select **Monokai Pro Octagon** as the active theme.
+
+## Customize
+
+Customization is optional. Install and enable the Style Settings community plugin, then open **Settings → Style Settings → Monokai Pro Octagon**. You can choose an accent color, colorize heading levels, and enable rounded corners. The theme uses squared corners by default.
+
+Please report theme issues in this repository's GitHub Issues tab. Include your Obsidian version, operating system, relevant plugins, and steps to reproduce. Plugin interfaces may change independently of the theme.
 
 ## Development
 
@@ -46,20 +60,12 @@ npm run lint
 
 Use `npm run watch` to rebuild `theme.css` while editing. Reload the theme in Obsidian to preview changes. Linting also runs in GitHub Actions.
 
-## Screenshots
-
-### Dashboard
-
-![Monokai Pro Octagon displaying a dashboard with the file explorer and calendar](screenshots/main.png)
-
-### Task statuses
-
-![Monokai Pro Octagon task checkbox and status marker styles](screenshots/task-statuses.png)
-
 ## Releasing
 
 Update `manifest.json` and `versions.json` for a release, then push a tag matching the manifest version. The existing GitHub Actions workflow creates a draft release with `manifest.json` and `theme.css` attached. See the [Obsidian theme release guide](https://docs.obsidian.md/Themes/App+themes/Release+your+theme+with+GitHub+Actions).
 
-## License and attribution
+## Credits and license
 
-The palette reference and attribution are documented above. The repository's existing `LICENSE` applies to the theme source; check the upstream Monokai Pro and Ghostty palette terms before redistributing the palette independently.
+The palette is based on [Monokai Pro](https://monokai.pro/), specifically its Octagon variant. This theme maps those colors to Obsidian's interface and syntax highlighting, with additional surface shades derived from the base background.
+
+The repository's [LICENSE](LICENSE) applies to the theme source. Palette assets and names may be subject to separate upstream terms; check those terms before redistributing the palette independently.
