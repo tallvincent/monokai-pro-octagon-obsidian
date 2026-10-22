@@ -99,8 +99,10 @@ body.theme-dark {
   --tab-text-color-focused-highlighted: var(--octagon-accent);
   --scrollbar-thumb-bg: rgb(234 242 241 / 12%);
   --scrollbar-active-thumb-bg: rgb(234 242 241 / 22%);
-  --titlebar-background: var(--background-secondary);
-  --titlebar-background-focused: var(--background-secondary-alt);
+  --titlebar-background: var(--background-primary);
+  --titlebar-background-focused: var(--background-primary);
+  --ribbon-background: var(--background-primary);
+  --ribbon-background-collapsed: var(--background-primary);
   --status-bar-background: var(--background-secondary);
   --workspace-background-translucent: rgb(40 42 58 / 85%);
   --radius-s: 0;
@@ -518,6 +520,11 @@ body.theme-dark {
   --tab-outline-color: var(--octagon-accent);
 }
 
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+  --background-secondary: var(--background-primary);
+}
+
 .menu {
   padding: var(--size-2-1);
   border: 1px solid var(--background-modifier-border);
@@ -626,16 +633,14 @@ svg * {
 }
 
 /* Obsidian and Bases can add their own underlines; force the requested hover-only behavior. */
-/* stylelint-disable declaration-no-important */
 body.theme-dark :is(a, .internal-link, .external-link, .is-unresolved, .cm-underline, .cm-link, .cm-url):not(:hover) {
-  text-decoration: none !important;
+  text-decoration-line: none;
 }
 
 body.theme-dark :is(a, .internal-link, .external-link, .is-unresolved, .cm-underline, .cm-link, .cm-url):hover {
-  text-decoration: underline !important;
+  text-decoration-line: underline;
 }
 
-/* stylelint-enable declaration-no-important */
 body.theme-dark .internal-link:hover,
 body.theme-dark .cm-hmd-internal-link:hover {
   color: var(--link-color);

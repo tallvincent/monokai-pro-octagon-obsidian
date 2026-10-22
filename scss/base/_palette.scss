@@ -103,8 +103,10 @@ body.theme-dark {
 	--tab-text-color-focused-highlighted: var(--octagon-accent);
 	--scrollbar-thumb-bg: rgb(234 242 241 / 12%);
 	--scrollbar-active-thumb-bg: rgb(234 242 241 / 22%);
-	--titlebar-background: var(--background-secondary);
-	--titlebar-background-focused: var(--background-secondary-alt);
+	--titlebar-background: var(--background-primary);
+	--titlebar-background-focused: var(--background-primary);
+	--ribbon-background: var(--background-primary);
+	--ribbon-background-collapsed: var(--background-primary);
 	--status-bar-background: var(--background-secondary);
 	--workspace-background-translucent: rgb(40 42 58 / 85%);
 

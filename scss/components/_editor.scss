@@ -86,15 +86,13 @@
 }
 
 /* Obsidian and Bases can add their own underlines; force the requested hover-only behavior. */
-/* stylelint-disable declaration-no-important */
 body.theme-dark :is(a, .internal-link, .external-link, .is-unresolved, .cm-underline, .cm-link, .cm-url):not(:hover) {
-	text-decoration: none !important;
+	text-decoration-line: none;
 }
 
 body.theme-dark :is(a, .internal-link, .external-link, .is-unresolved, .cm-underline, .cm-link, .cm-url):hover {
-	text-decoration: underline !important;
+	text-decoration-line: underline;
 }
-/* stylelint-enable declaration-no-important */
 
 body.theme-dark .internal-link:hover,
 body.theme-dark .cm-hmd-internal-link:hover {
