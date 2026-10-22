@@ -49,7 +49,7 @@ Customization is optional. Install and enable the Style Settings community plugi
 - Numbered and bulleted list marker colors
 - Checkbox color
 - Internal, external, and unresolved link colors
-- Tag color, appearance (soft, outline, or text), and pill-shaped corners
+- Tag color and appearance (soft or text); rounded tags follow the Rounded corners setting
 - Rounded corners (squared by default)
 
 Internal and external links are underlined only while hovered and retain their color on hover.

@@ -89,7 +89,7 @@ body.theme-dark {
 	--tag-border-color-hover: transparent;
 	--tag-padding-x: 0.6em;
 	--tag-padding-y: 0.2em;
-	--tag-radius: 4px;
+	--tag-radius: 0;
 	--tag-weight: 500;
 	--code-normal: var(--octagon-foreground);
 	--code-comment: var(--color-base-50);
@@ -218,13 +218,6 @@ $octagon-palette: (
 @include octagon-palette-setting("octagon-unresolved-link", "--octagon-unresolved-link-color");
 @include octagon-palette-setting("octagon-tag", "--octagon-tag-color");
 
-.theme-dark.octagon-tag-style-outline {
-	--tag-background: transparent;
-	--tag-background-hover: color-mix(in srgb, var(--tag-color) 12%, transparent);
-	--tag-border-color: color-mix(in srgb, var(--tag-color) 45%, transparent);
-	--tag-border-color-hover: var(--tag-color);
-}
-
 .theme-dark.octagon-tag-style-text {
 	--tag-background: transparent;
 	--tag-background-hover: transparent;
@@ -232,10 +225,6 @@ $octagon-palette: (
 	--tag-border-color-hover: transparent;
 	--tag-padding-x: 0.15em;
 	--tag-padding-y: 0;
-}
-
-.theme-dark.octagon-rounded-tags {
-	--tag-radius: 999px;
 }
 
 .theme-dark.octagon-blockquote-accent {
@@ -254,6 +243,7 @@ $octagon-palette: (
 	--radius-s: 4px;
 	--radius-m: 8px;
 	--radius-l: 10px;
+	--tag-radius: 999px;
 	--input-radius: 4px;
 	--tab-radius-active: 4px 4px 0 0;
 	--checkbox-radius: 3px;

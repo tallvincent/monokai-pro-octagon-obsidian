@@ -85,7 +85,7 @@ body.theme-dark {
   --tag-border-color-hover: transparent;
   --tag-padding-x: 0.6em;
   --tag-padding-y: 0.2em;
-  --tag-radius: 4px;
+  --tag-radius: 0;
   --tag-weight: 500;
   --code-normal: var(--octagon-foreground);
   --code-comment: var(--color-base-50);
@@ -517,13 +517,6 @@ body.theme-dark {
   --octagon-tag-color: var(--octagon-purple);
 }
 
-.theme-dark.octagon-tag-style-outline {
-  --tag-background: transparent;
-  --tag-background-hover: color-mix(in srgb, var(--tag-color) 12%, transparent);
-  --tag-border-color: color-mix(in srgb, var(--tag-color) 45%, transparent);
-  --tag-border-color-hover: var(--tag-color);
-}
-
 .theme-dark.octagon-tag-style-text {
   --tag-background: transparent;
   --tag-background-hover: transparent;
@@ -531,10 +524,6 @@ body.theme-dark {
   --tag-border-color-hover: transparent;
   --tag-padding-x: 0.15em;
   --tag-padding-y: 0;
-}
-
-.theme-dark.octagon-rounded-tags {
-  --tag-radius: 999px;
 }
 
 .theme-dark.octagon-blockquote-accent {
@@ -553,6 +542,7 @@ body.theme-dark {
   --radius-s: 4px;
   --radius-m: 8px;
   --radius-l: 10px;
+  --tag-radius: 999px;
   --input-radius: 4px;
   --tab-radius-active: 4px 4px 0 0;
   --checkbox-radius: 3px;
@@ -1448,16 +1438,8 @@ settings:
         label: Soft
         value: octagon-tag-style-soft
       -
-        label: Outline
-        value: octagon-tag-style-outline
-      -
         label: Text
         value: octagon-tag-style-text
-  -
-    id: octagon-rounded-tags
-    title: Pill-shaped tags
-    description: Give tags fully rounded ends
-    type: class-toggle
   -
     id: octagon-rounded-corners
     title: Rounded corners
