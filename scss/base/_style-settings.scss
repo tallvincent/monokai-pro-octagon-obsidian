@@ -375,6 +375,54 @@ settings:
         label: Purple
         value: octagon-unresolved-link-purple
   -
+    id: octagon-tag-color
+    title: Tag color
+    description: Choose a color for tags
+    type: class-select
+    allowEmpty: false
+    default: octagon-tag-teal
+    options:
+      -
+        label: Red
+        value: octagon-tag-red
+      -
+        label: Orange
+        value: octagon-tag-orange
+      -
+        label: Yellow
+        value: octagon-tag-yellow
+      -
+        label: Green
+        value: octagon-tag-green
+      -
+        label: Teal
+        value: octagon-tag-teal
+      -
+        label: Purple
+        value: octagon-tag-purple
+  -
+    id: octagon-tag-style
+    title: Tag appearance
+    description: Choose filled, outlined, or text-only tags
+    type: class-select
+    allowEmpty: false
+    default: octagon-tag-style-soft
+    options:
+      -
+        label: Soft
+        value: octagon-tag-style-soft
+      -
+        label: Outline
+        value: octagon-tag-style-outline
+      -
+        label: Text
+        value: octagon-tag-style-text
+  -
+    id: octagon-rounded-tags
+    title: Pill-shaped tags
+    description: Give tags fully rounded ends
+    type: class-toggle
+  -
     id: octagon-rounded-corners
     title: Rounded corners
     description: Use softer corners instead of the theme's squared geometry

@@ -78,9 +78,19 @@ body.theme-dark {
 	--link-color-hover: var(--link-color);
 	--link-external-color: var(--octagon-external-link-color, var(--octagon-purple));
 	--link-external-color-hover: var(--link-external-color);
+	--link-external-decoration: none;
+	--link-external-decoration-hover: underline;
 	--link-unresolved-color: var(--octagon-unresolved-link-color, var(--octagon-orange));
-	--tag-color: var(--octagon-teal);
+	--tag-color: var(--octagon-tag-color, var(--octagon-teal));
 	--tag-color-hover: var(--octagon-foreground);
+	--tag-background: color-mix(in srgb, var(--tag-color) 14%, transparent);
+	--tag-background-hover: color-mix(in srgb, var(--tag-color) 24%, transparent);
+	--tag-border-color: transparent;
+	--tag-border-color-hover: transparent;
+	--tag-padding-x: 0.6em;
+	--tag-padding-y: 0.2em;
+	--tag-radius: 4px;
+	--tag-weight: 500;
 	--code-normal: var(--octagon-foreground);
 	--code-comment: var(--color-base-50);
 	--code-function: var(--octagon-yellow);
@@ -206,6 +216,27 @@ $octagon-palette: (
 @include octagon-palette-setting("octagon-internal-link", "--octagon-internal-link-color");
 @include octagon-palette-setting("octagon-external-link", "--octagon-external-link-color");
 @include octagon-palette-setting("octagon-unresolved-link", "--octagon-unresolved-link-color");
+@include octagon-palette-setting("octagon-tag", "--octagon-tag-color");
+
+.theme-dark.octagon-tag-style-outline {
+	--tag-background: transparent;
+	--tag-background-hover: color-mix(in srgb, var(--tag-color) 12%, transparent);
+	--tag-border-color: color-mix(in srgb, var(--tag-color) 45%, transparent);
+	--tag-border-color-hover: var(--tag-color);
+}
+
+.theme-dark.octagon-tag-style-text {
+	--tag-background: transparent;
+	--tag-background-hover: transparent;
+	--tag-border-color: transparent;
+	--tag-border-color-hover: transparent;
+	--tag-padding-x: 0.15em;
+	--tag-padding-y: 0;
+}
+
+.theme-dark.octagon-rounded-tags {
+	--tag-radius: 999px;
+}
 
 .theme-dark.octagon-blockquote-accent {
 	--octagon-blockquote-color: var(--octagon-accent);

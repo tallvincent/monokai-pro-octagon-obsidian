@@ -90,13 +90,13 @@ body.theme-dark :is(a, .internal-link, .external-link, .is-unresolved, .cm-under
 	text-decoration-line: none;
 }
 
-body.theme-dark .markdown-rendered a.external-link:not(:hover),
-body.theme-dark a.external-link:not(:hover) {
-	text-decoration-line: none;
-}
-
 body.theme-dark :is(a, .internal-link, .external-link, .is-unresolved, .cm-underline, .cm-link, .cm-url):hover {
 	text-decoration-line: underline;
+}
+
+body.theme-dark .tag,
+body.theme-dark .tag:hover {
+	text-decoration-line: none;
 }
 
 body.theme-dark .internal-link:hover,
