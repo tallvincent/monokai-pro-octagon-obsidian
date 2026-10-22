@@ -41,7 +41,17 @@ Create `.obsidian/themes/Monokai Pro Octagon/` in your vault and copy `theme.css
 
 ## Customize
 
-Customization is optional. Install and enable the Style Settings community plugin, then open **Settings → Style Settings → Monokai Pro Octagon**. You can choose an accent color, colorize heading levels, and enable rounded corners. The theme uses squared corners by default.
+Customization is optional. Install and enable the Style Settings community plugin, then open **Settings → Style Settings → Monokai Pro Octagon** to configure:
+
+- Accent color
+- Heading colors: enable colored headings and choose a palette color for H1–H6
+- Blockquote border color
+- Numbered and bulleted list marker colors
+- Checkbox color
+- Internal, external, and unresolved link colors
+- Rounded corners (squared by default)
+
+Internal and external links are underlined only while hovered and retain their color on hover.
 
 Please report theme issues in this repository's GitHub Issues tab. Include your Obsidian version, operating system, relevant plugins, and steps to reproduce. Plugin interfaces may change independently of the theme.
 

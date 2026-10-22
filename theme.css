@@ -1,216 +1,541 @@
 body.theme-dark {
-	--octagon-red: #ff657a;
-	--octagon-green: #bad761;
-	--octagon-yellow: #ffd76d;
-	--octagon-orange: #ff9b5e;
-	--octagon-purple: #c39ac9;
-	--octagon-teal: #9cd1bb;
-	--octagon-background: #282a3a;
-	--octagon-foreground: #eaf2f1;
-	--octagon-selection: #535763;
-	--octagon-cursor: #b2b9bd;
-	--octagon-accent: var(--octagon-green);
-	--color-base-00: var(--octagon-background);
-	--color-base-05: #2d2f3e;
-	--color-base-10: #303241;
-	--color-base-20: #343642;
-	--color-base-25: #3d3f4c;
-	--color-base-30: var(--octagon-selection);
-	--color-base-35: #696d77;
-	--color-base-40: #7d818a;
-	--color-base-50: #92969e;
-	--color-base-60: var(--octagon-cursor);
-	--color-base-70: #c9d0ce;
-	--color-base-100: var(--octagon-foreground);
-	--color-red: var(--octagon-red);
-	--color-red-rgb: 255, 101, 122;
-	--color-orange: var(--octagon-orange);
-	--color-yellow: var(--octagon-yellow);
-	--color-green: var(--octagon-green);
-	--color-cyan: var(--octagon-teal);
-	--color-blue: var(--octagon-teal);
-	--color-purple: var(--octagon-purple);
-	--color-pink: var(--octagon-red);
-	--background-primary: var(--color-base-00);
-	--background-primary-alt: var(--color-base-10);
-	--background-secondary: var(--color-base-00);
-	--background-secondary-alt: var(--color-base-25);
-	--background-modifier-hover: rgb(234 242 241 / 7%);
-	--background-modifier-active-hover: rgb(234 242 241 / 11%);
-	--background-modifier-border: var(--color-base-30);
-	--background-modifier-border-hover: var(--color-base-35);
-	--background-modifier-border-focus: var(--color-base-40);
-	--background-modifier-error: var(--octagon-red);
-	--background-modifier-error-rgb: var(--color-red-rgb);
-	--background-modifier-success: var(--octagon-green);
-	--background-modifier-message: #1d1f2b;
-	--text-normal: var(--octagon-foreground);
-	--text-muted: var(--octagon-cursor);
-	--text-faint: var(--color-base-50);
-	--text-on-accent: #282a3a;
-	--text-error: var(--octagon-red);
-	--text-success: var(--octagon-green);
-	--text-accent: var(--color-accent);
-	--text-accent-hover: var(--color-accent-2);
-	--text-selection: var(--octagon-selection);
-	--text-highlight-bg: rgb(255 215 109 / 24%);
-	--accent-h: 77;
-	--accent-s: 60%;
-	--accent-l: 61%;
-	--color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
-	--color-accent-1: var(--color-accent);
-	--color-accent-2: hsl(
-		var(--accent-h) var(--accent-s) calc(var(--accent-l) + 6%)
-	);
-	--color-accent-3: hsl(
-		var(--accent-h) var(--accent-s) calc(var(--accent-l) - 8%)
-	);
-	--interactive-normal: var(--color-base-20);
-	--interactive-hover: var(--color-base-25);
-	--interactive-accent: var(--color-accent);
-	--interactive-accent-hover: var(--color-accent-2);
-	--interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-	--caret-color: var(--octagon-cursor);
-	--selection-background: var(--octagon-selection);
-	--bold-color: var(--octagon-yellow);
-	--italic-color: var(--octagon-purple);
-	--link-color: var(--octagon-teal);
-	--link-color-hover: var(--octagon-green);
-	--link-external-color: var(--octagon-purple);
-	--link-external-color-hover: var(--octagon-pink);
-	--link-unresolved-color: var(--octagon-orange);
-	--tag-color: var(--octagon-teal);
-	--tag-color-hover: var(--octagon-foreground);
-	--code-normal: var(--octagon-foreground);
-	--code-comment: var(--color-base-50);
-	--code-function: var(--octagon-yellow);
-	--code-important: var(--octagon-orange);
-	--code-keyword: var(--octagon-purple);
-	--code-property: var(--octagon-teal);
-	--code-string: var(--octagon-green);
-	--code-tag: var(--octagon-red);
-	--code-value: var(--octagon-orange);
-	--code-background: var(--color-base-10);
-	--blockquote-border-color: var(--octagon-accent);
-	--list-marker-color: var(--octagon-accent);
-	--checklist-done-color: var(--octagon-green);
-	--graph-node-focused: var(--octagon-accent);
-	--graph-node-tag: var(--octagon-green);
-	--graph-node-attachment: var(--octagon-yellow);
-	--tab-container-background: var(--background-secondary);
-	--tab-background-active: var(--background-primary);
-	--tab-text-color-focused-highlighted: var(--octagon-accent);
-	--scrollbar-thumb-bg: rgb(234 242 241 / 12%);
-	--scrollbar-active-thumb-bg: rgb(234 242 241 / 22%);
-	--titlebar-background: var(--background-secondary);
-	--titlebar-background-focused: var(--background-secondary-alt);
-	--status-bar-background: var(--background-secondary);
-	--workspace-background-translucent: rgb(40 42 58 / 85%);
-	--radius-s: 0;
-	--radius-m: 0;
-	--radius-l: 0;
-	--input-radius: 0;
-	--tab-radius-active: 0;
-	--checkbox-radius: 0;
-	--toggle-radius: 0;
-	--toggle-thumb-radius: 0;
-	--slider-thumb-radius: 0;
+  --octagon-red: #ff657a;
+  --octagon-green: #bad761;
+  --octagon-yellow: #ffd76d;
+  --octagon-orange: #ff9b5e;
+  --octagon-purple: #c39ac9;
+  --octagon-teal: #9cd1bb;
+  --octagon-background: #282a3a;
+  --octagon-foreground: #eaf2f1;
+  --octagon-selection: #535763;
+  --octagon-cursor: #b2b9bd;
+  --octagon-accent: var(--octagon-green);
+  --color-base-00: var(--octagon-background);
+  --color-base-05: #2d2f3e;
+  --color-base-10: #303241;
+  --color-base-20: #343642;
+  --color-base-25: #3d3f4c;
+  --color-base-30: var(--octagon-selection);
+  --color-base-35: #696d77;
+  --color-base-40: #7d818a;
+  --color-base-50: #92969e;
+  --color-base-60: var(--octagon-cursor);
+  --color-base-70: #c9d0ce;
+  --color-base-100: var(--octagon-foreground);
+  --color-red: var(--octagon-red);
+  --color-red-rgb: 255, 101, 122;
+  --color-orange: var(--octagon-orange);
+  --color-yellow: var(--octagon-yellow);
+  --color-green: var(--octagon-green);
+  --color-cyan: var(--octagon-teal);
+  --color-blue: var(--octagon-teal);
+  --color-purple: var(--octagon-purple);
+  --color-pink: var(--octagon-red);
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-20);
+  --background-secondary-alt: var(--color-base-25);
+  --background-modifier-hover: rgb(234 242 241 / 7%);
+  --background-modifier-active-hover: rgb(234 242 241 / 11%);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-base-40);
+  --background-modifier-error: var(--octagon-red);
+  --background-modifier-error-rgb: var(--color-red-rgb);
+  --background-modifier-success: var(--octagon-green);
+  --background-modifier-message: #1d1f2b;
+  --text-normal: var(--octagon-foreground);
+  --text-muted: var(--octagon-cursor);
+  --text-faint: var(--color-base-50);
+  --text-on-accent: #282a3a;
+  --text-error: var(--octagon-red);
+  --text-success: var(--octagon-green);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-2);
+  --text-selection: var(--octagon-selection);
+  --text-highlight-bg: rgb(255 215 109 / 24%);
+  --accent-h: 77;
+  --accent-s: 60%;
+  --accent-l: 61%;
+  --color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
+  --color-accent-1: var(--color-accent);
+  --color-accent-2: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 6%));
+  --color-accent-3: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) - 8%));
+  --interactive-normal: var(--color-base-20);
+  --interactive-hover: var(--color-base-25);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-2);
+  --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --caret-color: var(--octagon-cursor);
+  --selection-background: var(--octagon-selection);
+  --bold-color: var(--octagon-yellow);
+  --italic-color: var(--octagon-purple);
+  --link-color: var(--octagon-internal-link-color, var(--octagon-teal));
+  --link-color-hover: var(--link-color);
+  --link-external-color: var(--octagon-external-link-color, var(--octagon-purple));
+  --link-external-color-hover: var(--link-external-color);
+  --link-unresolved-color: var(--octagon-unresolved-link-color, var(--octagon-orange));
+  --tag-color: var(--octagon-teal);
+  --tag-color-hover: var(--octagon-foreground);
+  --code-normal: var(--octagon-foreground);
+  --code-comment: var(--color-base-50);
+  --code-function: var(--octagon-yellow);
+  --code-important: var(--octagon-orange);
+  --code-keyword: var(--octagon-purple);
+  --code-property: var(--octagon-teal);
+  --code-string: var(--octagon-green);
+  --code-tag: var(--octagon-red);
+  --code-value: var(--octagon-orange);
+  --code-background: var(--color-base-10);
+  --blockquote-border-color: var(--octagon-blockquote-color, var(--octagon-accent));
+  --list-marker-color: var(--octagon-bulleted-list-color, var(--octagon-accent));
+  --checkbox-color: var(--octagon-checkbox-color, var(--octagon-accent));
+  --checklist-done-color: var(--octagon-checkbox-color, var(--octagon-green));
+  --graph-node-focused: var(--octagon-accent);
+  --graph-node-tag: var(--octagon-green);
+  --graph-node-attachment: var(--octagon-yellow);
+  --tab-container-background: var(--background-secondary);
+  --tab-background-active: var(--background-primary);
+  --tab-text-color-focused-highlighted: var(--octagon-accent);
+  --scrollbar-thumb-bg: rgb(234 242 241 / 12%);
+  --scrollbar-active-thumb-bg: rgb(234 242 241 / 22%);
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary-alt);
+  --status-bar-background: var(--background-secondary);
+  --workspace-background-translucent: rgb(40 42 58 / 85%);
+  --radius-s: 0;
+  --radius-m: 0;
+  --radius-l: 0;
+  --input-radius: 0;
+  --tab-radius-active: 0;
+  --checkbox-radius: 0;
+  --toggle-radius: 0;
+  --toggle-thumb-radius: 0;
+  --slider-thumb-radius: 0;
 }
 
 .theme-dark.octagon-accent-red {
-	--octagon-accent: var(--octagon-red);
-	--accent-h: 350;
-	--accent-s: 100%;
-	--accent-l: 70%;
+  --octagon-accent: var(--octagon-red);
+  --accent-h: 350;
+  --accent-s: 100%;
+  --accent-l: 70%;
 }
 
 .theme-dark.octagon-accent-orange {
-	--octagon-accent: var(--octagon-orange);
-	--accent-h: 23;
-	--accent-s: 100%;
-	--accent-l: 68%;
+  --octagon-accent: var(--octagon-orange);
+  --accent-h: 23;
+  --accent-s: 100%;
+  --accent-l: 68%;
 }
 
 .theme-dark.octagon-accent-yellow {
-	--octagon-accent: var(--octagon-yellow);
-	--accent-h: 43;
-	--accent-s: 100%;
-	--accent-l: 71%;
+  --octagon-accent: var(--octagon-yellow);
+  --accent-h: 43;
+  --accent-s: 100%;
+  --accent-l: 71%;
 }
 
 .theme-dark.octagon-accent-green {
-	--octagon-accent: var(--octagon-green);
-	--accent-h: 77;
-	--accent-s: 60%;
-	--accent-l: 61%;
+  --octagon-accent: var(--octagon-green);
+  --accent-h: 77;
+  --accent-s: 60%;
+  --accent-l: 61%;
 }
 
 .theme-dark.octagon-accent-teal {
-	--octagon-accent: var(--octagon-teal);
-	--accent-h: 155;
-	--accent-s: 38%;
-	--accent-l: 72%;
+  --octagon-accent: var(--octagon-teal);
+  --accent-h: 155;
+  --accent-s: 38%;
+  --accent-l: 72%;
 }
 
 .theme-dark.octagon-accent-purple {
-	--octagon-accent: var(--octagon-purple);
-	--accent-h: 293;
-	--accent-s: 31%;
-	--accent-l: 70%;
+  --octagon-accent: var(--octagon-purple);
+  --accent-h: 293;
+  --accent-s: 31%;
+  --accent-l: 70%;
 }
 
 .theme-dark.octagon-colored-headings {
-	--h1-color: var(--octagon-accent);
-	--h2-color: var(--octagon-yellow);
-	--h3-color: var(--octagon-orange);
-	--h4-color: var(--octagon-teal);
-	--h5-color: var(--octagon-purple);
-	--h6-color: var(--octagon-green);
+  --h1-color: var(--octagon-h1-color, var(--octagon-accent));
+  --h2-color: var(--octagon-h2-color, var(--octagon-yellow));
+  --h3-color: var(--octagon-h3-color, var(--octagon-orange));
+  --h4-color: var(--octagon-h4-color, var(--octagon-teal));
+  --h5-color: var(--octagon-h5-color, var(--octagon-purple));
+  --h6-color: var(--octagon-h6-color, var(--octagon-green));
+}
+
+.theme-dark.octagon-h1-accent {
+  --octagon-h1-color: var(--octagon-accent);
+}
+
+.theme-dark.octagon-h1-red {
+  --octagon-h1-color: var(--octagon-red);
+}
+
+.theme-dark.octagon-h1-orange {
+  --octagon-h1-color: var(--octagon-orange);
+}
+
+.theme-dark.octagon-h1-yellow {
+  --octagon-h1-color: var(--octagon-yellow);
+}
+
+.theme-dark.octagon-h1-green {
+  --octagon-h1-color: var(--octagon-green);
+}
+
+.theme-dark.octagon-h1-teal {
+  --octagon-h1-color: var(--octagon-teal);
+}
+
+.theme-dark.octagon-h1-purple {
+  --octagon-h1-color: var(--octagon-purple);
+}
+
+.theme-dark.octagon-h2-red {
+  --octagon-h2-color: var(--octagon-red);
+}
+
+.theme-dark.octagon-h2-orange {
+  --octagon-h2-color: var(--octagon-orange);
+}
+
+.theme-dark.octagon-h2-yellow {
+  --octagon-h2-color: var(--octagon-yellow);
+}
+
+.theme-dark.octagon-h2-green {
+  --octagon-h2-color: var(--octagon-green);
+}
+
+.theme-dark.octagon-h2-teal {
+  --octagon-h2-color: var(--octagon-teal);
+}
+
+.theme-dark.octagon-h2-purple {
+  --octagon-h2-color: var(--octagon-purple);
+}
+
+.theme-dark.octagon-h3-red {
+  --octagon-h3-color: var(--octagon-red);
+}
+
+.theme-dark.octagon-h3-orange {
+  --octagon-h3-color: var(--octagon-orange);
+}
+
+.theme-dark.octagon-h3-yellow {
+  --octagon-h3-color: var(--octagon-yellow);
+}
+
+.theme-dark.octagon-h3-green {
+  --octagon-h3-color: var(--octagon-green);
+}
+
+.theme-dark.octagon-h3-teal {
+  --octagon-h3-color: var(--octagon-teal);
+}
+
+.theme-dark.octagon-h3-purple {
+  --octagon-h3-color: var(--octagon-purple);
+}
+
+.theme-dark.octagon-h4-red {
+  --octagon-h4-color: var(--octagon-red);
+}
+
+.theme-dark.octagon-h4-orange {
+  --octagon-h4-color: var(--octagon-orange);
+}
+
+.theme-dark.octagon-h4-yellow {
+  --octagon-h4-color: var(--octagon-yellow);
+}
+
+.theme-dark.octagon-h4-green {
+  --octagon-h4-color: var(--octagon-green);
+}
+
+.theme-dark.octagon-h4-teal {
+  --octagon-h4-color: var(--octagon-teal);
+}
+
+.theme-dark.octagon-h4-purple {
+  --octagon-h4-color: var(--octagon-purple);
+}
+
+.theme-dark.octagon-h5-red {
+  --octagon-h5-color: var(--octagon-red);
+}
+
+.theme-dark.octagon-h5-orange {
+  --octagon-h5-color: var(--octagon-orange);
+}
+
+.theme-dark.octagon-h5-yellow {
+  --octagon-h5-color: var(--octagon-yellow);
+}
+
+.theme-dark.octagon-h5-green {
+  --octagon-h5-color: var(--octagon-green);
+}
+
+.theme-dark.octagon-h5-teal {
+  --octagon-h5-color: var(--octagon-teal);
+}
+
+.theme-dark.octagon-h5-purple {
+  --octagon-h5-color: var(--octagon-purple);
+}
+
+.theme-dark.octagon-h6-red {
+  --octagon-h6-color: var(--octagon-red);
+}
+
+.theme-dark.octagon-h6-orange {
+  --octagon-h6-color: var(--octagon-orange);
+}
+
+.theme-dark.octagon-h6-yellow {
+  --octagon-h6-color: var(--octagon-yellow);
+}
+
+.theme-dark.octagon-h6-green {
+  --octagon-h6-color: var(--octagon-green);
+}
+
+.theme-dark.octagon-h6-teal {
+  --octagon-h6-color: var(--octagon-teal);
+}
+
+.theme-dark.octagon-h6-purple {
+  --octagon-h6-color: var(--octagon-purple);
+}
+
+.theme-dark.octagon-blockquote-red {
+  --octagon-blockquote-color: var(--octagon-red);
+}
+
+.theme-dark.octagon-blockquote-orange {
+  --octagon-blockquote-color: var(--octagon-orange);
+}
+
+.theme-dark.octagon-blockquote-yellow {
+  --octagon-blockquote-color: var(--octagon-yellow);
+}
+
+.theme-dark.octagon-blockquote-green {
+  --octagon-blockquote-color: var(--octagon-green);
+}
+
+.theme-dark.octagon-blockquote-teal {
+  --octagon-blockquote-color: var(--octagon-teal);
+}
+
+.theme-dark.octagon-blockquote-purple {
+  --octagon-blockquote-color: var(--octagon-purple);
+}
+
+.theme-dark.octagon-numbered-list-red {
+  --octagon-numbered-list-color: var(--octagon-red);
+}
+
+.theme-dark.octagon-numbered-list-orange {
+  --octagon-numbered-list-color: var(--octagon-orange);
+}
+
+.theme-dark.octagon-numbered-list-yellow {
+  --octagon-numbered-list-color: var(--octagon-yellow);
+}
+
+.theme-dark.octagon-numbered-list-green {
+  --octagon-numbered-list-color: var(--octagon-green);
+}
+
+.theme-dark.octagon-numbered-list-teal {
+  --octagon-numbered-list-color: var(--octagon-teal);
+}
+
+.theme-dark.octagon-numbered-list-purple {
+  --octagon-numbered-list-color: var(--octagon-purple);
+}
+
+.theme-dark.octagon-bulleted-list-red {
+  --octagon-bulleted-list-color: var(--octagon-red);
+}
+
+.theme-dark.octagon-bulleted-list-orange {
+  --octagon-bulleted-list-color: var(--octagon-orange);
+}
+
+.theme-dark.octagon-bulleted-list-yellow {
+  --octagon-bulleted-list-color: var(--octagon-yellow);
+}
+
+.theme-dark.octagon-bulleted-list-green {
+  --octagon-bulleted-list-color: var(--octagon-green);
+}
+
+.theme-dark.octagon-bulleted-list-teal {
+  --octagon-bulleted-list-color: var(--octagon-teal);
+}
+
+.theme-dark.octagon-bulleted-list-purple {
+  --octagon-bulleted-list-color: var(--octagon-purple);
+}
+
+.theme-dark.octagon-checkbox-red {
+  --octagon-checkbox-color: var(--octagon-red);
+}
+
+.theme-dark.octagon-checkbox-orange {
+  --octagon-checkbox-color: var(--octagon-orange);
+}
+
+.theme-dark.octagon-checkbox-yellow {
+  --octagon-checkbox-color: var(--octagon-yellow);
+}
+
+.theme-dark.octagon-checkbox-green {
+  --octagon-checkbox-color: var(--octagon-green);
+}
+
+.theme-dark.octagon-checkbox-teal {
+  --octagon-checkbox-color: var(--octagon-teal);
+}
+
+.theme-dark.octagon-checkbox-purple {
+  --octagon-checkbox-color: var(--octagon-purple);
+}
+
+.theme-dark.octagon-internal-link-red {
+  --octagon-internal-link-color: var(--octagon-red);
+}
+
+.theme-dark.octagon-internal-link-orange {
+  --octagon-internal-link-color: var(--octagon-orange);
+}
+
+.theme-dark.octagon-internal-link-yellow {
+  --octagon-internal-link-color: var(--octagon-yellow);
+}
+
+.theme-dark.octagon-internal-link-green {
+  --octagon-internal-link-color: var(--octagon-green);
+}
+
+.theme-dark.octagon-internal-link-teal {
+  --octagon-internal-link-color: var(--octagon-teal);
+}
+
+.theme-dark.octagon-internal-link-purple {
+  --octagon-internal-link-color: var(--octagon-purple);
+}
+
+.theme-dark.octagon-external-link-red {
+  --octagon-external-link-color: var(--octagon-red);
+}
+
+.theme-dark.octagon-external-link-orange {
+  --octagon-external-link-color: var(--octagon-orange);
+}
+
+.theme-dark.octagon-external-link-yellow {
+  --octagon-external-link-color: var(--octagon-yellow);
+}
+
+.theme-dark.octagon-external-link-green {
+  --octagon-external-link-color: var(--octagon-green);
+}
+
+.theme-dark.octagon-external-link-teal {
+  --octagon-external-link-color: var(--octagon-teal);
+}
+
+.theme-dark.octagon-external-link-purple {
+  --octagon-external-link-color: var(--octagon-purple);
+}
+
+.theme-dark.octagon-unresolved-link-red {
+  --octagon-unresolved-link-color: var(--octagon-red);
+}
+
+.theme-dark.octagon-unresolved-link-orange {
+  --octagon-unresolved-link-color: var(--octagon-orange);
+}
+
+.theme-dark.octagon-unresolved-link-yellow {
+  --octagon-unresolved-link-color: var(--octagon-yellow);
+}
+
+.theme-dark.octagon-unresolved-link-green {
+  --octagon-unresolved-link-color: var(--octagon-green);
+}
+
+.theme-dark.octagon-unresolved-link-teal {
+  --octagon-unresolved-link-color: var(--octagon-teal);
+}
+
+.theme-dark.octagon-unresolved-link-purple {
+  --octagon-unresolved-link-color: var(--octagon-purple);
+}
+
+.theme-dark.octagon-blockquote-accent {
+  --octagon-blockquote-color: var(--octagon-accent);
+}
+
+.theme-dark.octagon-numbered-list-accent {
+  --octagon-numbered-list-color: var(--octagon-accent);
+}
+
+.theme-dark.octagon-bulleted-list-accent {
+  --octagon-bulleted-list-color: var(--octagon-accent);
 }
 
 .theme-dark.octagon-rounded-corners {
-	--radius-s: 4px;
-	--radius-m: 8px;
-	--radius-l: 10px;
-	--input-radius: 4px;
-	--tab-radius-active: 4px 4px 0 0;
-	--checkbox-radius: 3px;
-	--toggle-radius: 18px;
-	--toggle-thumb-radius: 18px;
-	--slider-thumb-radius: 50%;
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 10px;
+  --input-radius: 4px;
+  --tab-radius-active: 4px 4px 0 0;
+  --checkbox-radius: 3px;
+  --toggle-radius: 18px;
+  --toggle-thumb-radius: 18px;
+  --slider-thumb-radius: 50%;
 }
 
 .workspace-tab-header.is-active::before,
 .workspace-tab-header.is-active::after {
-	display: none;
+  display: none;
 }
 
 .workspace-tab-header.is-active {
-	box-shadow: inset 0 -2px var(--octagon-accent);
+  box-shadow: inset 0 -2px var(--octagon-accent);
 }
 
 .workspace-leaf.mod-active {
-	--tab-outline-color: var(--octagon-accent);
+  --tab-outline-color: var(--octagon-accent);
 }
 
 .menu {
-	padding: var(--size-2-1);
-	border: 1px solid var(--background-modifier-border);
+  padding: var(--size-2-1);
+  border: 1px solid var(--background-modifier-border);
 }
 
 .menu-item {
-	padding: var(--size-4-1) var(--size-4-2);
+  padding: var(--size-4-1) var(--size-4-2);
 }
 
 .menu-separator {
-	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+  margin: var(--size-2-1) calc(var(--size-2-1) * -1);
 }
 
 svg * {
-	stroke-linecap: square;
-	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  rx: 0;
+  ry: 0;
 }
 
 .markdown-rendered h1,
@@ -220,104 +545,142 @@ svg * {
 .markdown-rendered h5,
 .markdown-rendered h6,
 .cm-header {
-	color: var(--heading-color, inherit);
+  color: var(--heading-color, inherit);
 }
 
 .markdown-rendered h1 {
-	--heading-color: var(--h1-color);
+  --heading-color: var(--h1-color);
 }
 
 .markdown-rendered h2 {
-	--heading-color: var(--h2-color);
+  --heading-color: var(--h2-color);
 }
 
 .markdown-rendered h3 {
-	--heading-color: var(--h3-color);
+  --heading-color: var(--h3-color);
 }
 
 .markdown-rendered h4 {
-	--heading-color: var(--h4-color);
+  --heading-color: var(--h4-color);
 }
 
 .markdown-rendered h5 {
-	--heading-color: var(--h5-color);
+  --heading-color: var(--h5-color);
 }
 
 .markdown-rendered h6 {
-	--heading-color: var(--h6-color);
+  --heading-color: var(--h6-color);
 }
 
 .cm-header-1 {
-	--heading-color: var(--h1-color);
+  --heading-color: var(--h1-color);
 }
 
 .cm-header-2 {
-	--heading-color: var(--h2-color);
+  --heading-color: var(--h2-color);
 }
 
 .cm-header-3 {
-	--heading-color: var(--h3-color);
+  --heading-color: var(--h3-color);
 }
 
 .cm-header-4 {
-	--heading-color: var(--h4-color);
+  --heading-color: var(--h4-color);
 }
 
 .cm-header-5 {
-	--heading-color: var(--h5-color);
+  --heading-color: var(--h5-color);
 }
 
 .cm-header-6 {
-	--heading-color: var(--h6-color);
+  --heading-color: var(--h6-color);
 }
 
 .markdown-rendered :is(code, pre) {
-	border: 1px solid var(--background-modifier-border);
+  border: 1px solid var(--background-modifier-border);
 }
 
 .markdown-rendered blockquote {
-	border-inline-start-color: var(--blockquote-border-color);
+  border-inline-start-color: var(--blockquote-border-color);
+}
+
+.markdown-source-view.mod-cm6 .cm-formatting-quote {
+  color: var(--blockquote-border-color);
+}
+
+.markdown-rendered ul > li::marker,
+.markdown-rendered ul > li > .list-bullet::after,
+.markdown-source-view.mod-cm6 .cm-formatting-list-ul {
+  color: var(--octagon-bulleted-list-color, var(--octagon-accent));
+}
+
+.markdown-rendered ol > li::marker,
+.markdown-rendered ol > li > .list-number,
+.markdown-source-view.mod-cm6 .cm-formatting-list-ol,
+.markdown-source-view.mod-cm6 .list-number {
+  color: var(--octagon-numbered-list-color, var(--octagon-accent));
 }
 
 .markdown-rendered mark {
-	color: var(--text-normal);
+  color: var(--text-normal);
 }
 
-.markdown-rendered a:hover {
-	text-decoration: underline;
+/* Obsidian and Bases can add their own underlines; force the requested hover-only behavior. */
+/* stylelint-disable declaration-no-important */
+body.theme-dark :is(a, .internal-link, .external-link, .is-unresolved, .cm-underline, .cm-link, .cm-url):not(:hover) {
+  text-decoration: none !important;
+}
+
+body.theme-dark :is(a, .internal-link, .external-link, .is-unresolved, .cm-underline, .cm-link, .cm-url):hover {
+  text-decoration: underline !important;
+}
+
+/* stylelint-enable declaration-no-important */
+body.theme-dark .internal-link:hover,
+body.theme-dark .cm-hmd-internal-link:hover {
+  color: var(--link-color);
+}
+
+body.theme-dark .external-link:hover,
+body.theme-dark .cm-url:hover {
+  color: var(--link-external-color);
+}
+
+body.theme-dark .is-unresolved:hover {
+  color: var(--link-unresolved-color);
 }
 
 /* Checklist status icons */
 .cm-formatting.cm-formatting-task.cm-property {
-	font-family: var(--font-monospace);
+  font-family: var(--font-monospace);
 }
 
 /* Obsidian uses a camel-cased internal class and Sass emits simple task values unquoted. */
 /* stylelint-disable selector-class-pattern, selector-attribute-quotes */
-.markdown-rendered li[data-task="x"] > p,
-.markdown-rendered li[data-task="X"] > p,
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
-	color: var(--octagon-accent);
-	text-decoration-line: line-through;
-	text-decoration-color: var(--octagon-accent);
+.markdown-rendered li[data-task=x] > p,
+.markdown-rendered li[data-task=X] > p,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=x],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=X] {
+  color: var(--checklist-done-color);
+  text-decoration-line: line-through;
+  text-decoration-color: var(--checklist-done-color);
 }
 
-.markdown-rendered li[data-task="x"] > p *,
-.markdown-rendered li[data-task="X"] > p * {
-	color: var(--octagon-accent);
+.markdown-rendered li[data-task=x] > p *,
+.markdown-rendered li[data-task=X] > p * {
+  color: var(--checklist-done-color);
 }
 
 /* Cancelled tasks are muted and struck through. */
 .markdown-rendered li[data-task="-"] > p,
 .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"] {
-	color: var(--text-faint);
-	text-decoration-line: line-through;
-	text-decoration-color: var(--text-faint);
+  color: var(--text-faint);
+  text-decoration-line: line-through;
+  text-decoration-color: var(--text-faint);
 }
 
 .markdown-rendered li[data-task="-"] > p * {
-	color: var(--text-faint);
+  color: var(--text-faint);
 }
 
 /* Keep WebKit mask support for Obsidian's Chromium runtime and custom task selectors. */
@@ -325,286 +688,286 @@ svg * {
 input[data-task=">"]:checked,
 li[data-task=">"] > input:checked,
 li[data-task=">"] > p > input:checked {
-	--checkbox-marker-color: transparent;
-	border: none;
-	border-radius: 0;
-	background-image: none;
-	background-color: currentcolor;
-	color: var(--text-faint);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M4 10h11m-4-4 4 4-4 4'/%3E%3C/svg%3E");
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M4 10h11m-4-4 4 4-4 4'/%3E%3C/svg%3E");
-	-webkit-mask-size: var(--checkbox-icon, 125%);
-	mask-size: var(--checkbox-icon, 125%);
-	-webkit-mask-position: center;
-	mask-position: center;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentcolor;
+  color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M4 10h11m-4-4 4 4-4 4'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M4 10h11m-4-4 4 4-4 4'/%3E%3C/svg%3E");
+  -webkit-mask-size: var(--checkbox-icon, 125%);
+  mask-size: var(--checkbox-icon, 125%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 input[data-task="<"]:checked,
 li[data-task="<"] > input:checked,
 li[data-task="<"] > p > input:checked {
-	--checkbox-marker-color: transparent;
-	border: none;
-	border-radius: 0;
-	background-image: none;
-	background-color: currentcolor;
-	color: var(--octagon-teal);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Crect x='3' y='4' width='14' height='13' rx='1.5'/%3E%3Cpath d='M6 2.5v3M14 2.5v3M3 8h14'/%3E%3C/svg%3E");
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Crect x='3' y='4' width='14' height='13' rx='1.5'/%3E%3Cpath d='M6 2.5v3M14 2.5v3M3 8h14'/%3E%3C/svg%3E");
-	-webkit-mask-size: var(--checkbox-icon, 125%);
-	mask-size: var(--checkbox-icon, 125%);
-	-webkit-mask-position: center;
-	mask-position: center;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentcolor;
+  color: var(--octagon-teal);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Crect x='3' y='4' width='14' height='13' rx='1.5'/%3E%3Cpath d='M6 2.5v3M14 2.5v3M3 8h14'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Crect x='3' y='4' width='14' height='13' rx='1.5'/%3E%3Cpath d='M6 2.5v3M14 2.5v3M3 8h14'/%3E%3C/svg%3E");
+  -webkit-mask-size: var(--checkbox-icon, 125%);
+  mask-size: var(--checkbox-icon, 125%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 input[data-task="!"]:checked,
 li[data-task="!"] > input:checked,
 li[data-task="!"] > p > input:checked {
-	--checkbox-marker-color: transparent;
-	border: none;
-	border-radius: 0;
-	background-image: none;
-	background-color: currentcolor;
-	color: var(--octagon-orange);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 4v8M10 15v.4'/%3E%3C/svg%3E");
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 4v8M10 15v.4'/%3E%3C/svg%3E");
-	-webkit-mask-size: var(--checkbox-icon, 125%);
-	mask-size: var(--checkbox-icon, 125%);
-	-webkit-mask-position: center;
-	mask-position: center;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentcolor;
+  color: var(--octagon-orange);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 4v8M10 15v.4'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 4v8M10 15v.4'/%3E%3C/svg%3E");
+  -webkit-mask-size: var(--checkbox-icon, 125%);
+  mask-size: var(--checkbox-icon, 125%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 input[data-task="-"]:checked,
 li[data-task="-"] > input:checked,
 li[data-task="-"] > p > input:checked {
-	--checkbox-marker-color: transparent;
-	border: none;
-	border-radius: 0;
-	background-image: none;
-	background-color: currentcolor;
-	color: var(--text-faint);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M4 10h12'/%3E%3C/svg%3E");
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M4 10h12'/%3E%3C/svg%3E");
-	-webkit-mask-size: var(--checkbox-icon, 125%);
-	mask-size: var(--checkbox-icon, 125%);
-	-webkit-mask-position: center;
-	mask-position: center;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentcolor;
+  color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M4 10h12'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M4 10h12'/%3E%3C/svg%3E");
+  -webkit-mask-size: var(--checkbox-icon, 125%);
+  mask-size: var(--checkbox-icon, 125%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 input[data-task="/"]:checked,
 li[data-task="/"] > input:checked,
 li[data-task="/"] > p > input:checked {
-	--checkbox-marker-color: transparent;
-	border: none;
-	border-radius: 0;
-	background-image: none;
-	background-color: currentcolor;
-	color: var(--octagon-accent);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M3 3h14L3 17z' fill='black' stroke='none'/%3E%3Cpath d='M3 3h14v14H3zM17 3 3 17' fill='none' stroke='black' stroke-width='1.8'/%3E%3C/svg%3E");
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M3 3h14L3 17z' fill='black' stroke='none'/%3E%3Cpath d='M3 3h14v14H3zM17 3 3 17' fill='none' stroke='black' stroke-width='1.8'/%3E%3C/svg%3E");
-	-webkit-mask-size: var(--checkbox-icon, 125%);
-	mask-size: var(--checkbox-icon, 125%);
-	-webkit-mask-position: center;
-	mask-position: center;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentcolor;
+  color: var(--octagon-accent);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M3 3h14L3 17z' fill='black' stroke='none'/%3E%3Cpath d='M3 3h14v14H3zM17 3 3 17' fill='none' stroke='black' stroke-width='1.8'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M3 3h14L3 17z' fill='black' stroke='none'/%3E%3Cpath d='M3 3h14v14H3zM17 3 3 17' fill='none' stroke='black' stroke-width='1.8'/%3E%3C/svg%3E");
+  -webkit-mask-size: var(--checkbox-icon, 125%);
+  mask-size: var(--checkbox-icon, 125%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 input[data-task="*"]:checked,
 li[data-task="*"] > input:checked,
 li[data-task="*"] > p > input:checked {
-	--checkbox-marker-color: transparent;
-	border: none;
-	border-radius: 0;
-	background-image: none;
-	background-color: currentcolor;
-	color: var(--octagon-yellow);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='m10 2.5 2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5-3.6-3.5 5-.7z'/%3E%3C/svg%3E");
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='m10 2.5 2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5-3.6-3.5 5-.7z'/%3E%3C/svg%3E");
-	-webkit-mask-size: var(--checkbox-icon, 125%);
-	mask-size: var(--checkbox-icon, 125%);
-	-webkit-mask-position: center;
-	mask-position: center;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentcolor;
+  color: var(--octagon-yellow);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='m10 2.5 2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5-3.6-3.5 5-.7z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='m10 2.5 2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5-3.6-3.5 5-.7z'/%3E%3C/svg%3E");
+  -webkit-mask-size: var(--checkbox-icon, 125%);
+  mask-size: var(--checkbox-icon, 125%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 input[data-task="?"]:checked,
 li[data-task="?"] > input:checked,
 li[data-task="?"] > p > input:checked {
-	--checkbox-marker-color: transparent;
-	border: none;
-	border-radius: 0;
-	background-image: none;
-	background-color: currentcolor;
-	color: var(--octagon-purple);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M7 7a3 3 0 1 1 5.2 2c-1.3 1.2-2.2 1.6-2.2 3.5M10 16v.1'/%3E%3C/svg%3E");
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M7 7a3 3 0 1 1 5.2 2c-1.3 1.2-2.2 1.6-2.2 3.5M10 16v.1'/%3E%3C/svg%3E");
-	-webkit-mask-size: var(--checkbox-icon, 125%);
-	mask-size: var(--checkbox-icon, 125%);
-	-webkit-mask-position: center;
-	mask-position: center;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentcolor;
+  color: var(--octagon-purple);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M7 7a3 3 0 1 1 5.2 2c-1.3 1.2-2.2 1.6-2.2 3.5M10 16v.1'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M7 7a3 3 0 1 1 5.2 2c-1.3 1.2-2.2 1.6-2.2 3.5M10 16v.1'/%3E%3C/svg%3E");
+  -webkit-mask-size: var(--checkbox-icon, 125%);
+  mask-size: var(--checkbox-icon, 125%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
-input[data-task="l"]:checked,
-li[data-task="l"] > input:checked,
-li[data-task="l"] > p > input:checked {
-	--checkbox-marker-color: transparent;
-	border: none;
-	border-radius: 0;
-	background-image: none;
-	background-color: currentcolor;
-	color: var(--octagon-red);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 18s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10z'/%3E%3Ccircle cx='10' cy='8' r='2'/%3E%3C/svg%3E");
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 18s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10z'/%3E%3Ccircle cx='10' cy='8' r='2'/%3E%3C/svg%3E");
-	-webkit-mask-size: var(--checkbox-icon, 125%);
-	mask-size: var(--checkbox-icon, 125%);
-	-webkit-mask-position: center;
-	mask-position: center;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+input[data-task=l]:checked,
+li[data-task=l] > input:checked,
+li[data-task=l] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentcolor;
+  color: var(--octagon-red);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 18s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10z'/%3E%3Ccircle cx='10' cy='8' r='2'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 18s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10z'/%3E%3Ccircle cx='10' cy='8' r='2'/%3E%3C/svg%3E");
+  -webkit-mask-size: var(--checkbox-icon, 125%);
+  mask-size: var(--checkbox-icon, 125%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
-input[data-task="i"]:checked,
-li[data-task="i"] > input:checked,
-li[data-task="i"] > p > input:checked {
-	--checkbox-marker-color: transparent;
-	border: none;
-	border-radius: 0;
-	background-image: none;
-	background-color: currentcolor;
-	color: var(--octagon-teal);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 7v9M10 3v.1'/%3E%3C/svg%3E");
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 7v9M10 3v.1'/%3E%3C/svg%3E");
-	-webkit-mask-size: var(--checkbox-icon, 125%);
-	mask-size: var(--checkbox-icon, 125%);
-	-webkit-mask-position: center;
-	mask-position: center;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+input[data-task=i]:checked,
+li[data-task=i] > input:checked,
+li[data-task=i] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentcolor;
+  color: var(--octagon-teal);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 7v9M10 3v.1'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 7v9M10 3v.1'/%3E%3C/svg%3E");
+  -webkit-mask-size: var(--checkbox-icon, 125%);
+  mask-size: var(--checkbox-icon, 125%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
-input[data-task="I"]:checked,
-li[data-task="I"] > input:checked,
-li[data-task="I"] > p > input:checked {
-	--checkbox-marker-color: transparent;
-	border: none;
-	border-radius: 0;
-	background-image: none;
-	background-color: currentcolor;
-	color: var(--octagon-yellow);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M8 14c0-1.7-3-2.6-3-6a5 5 0 0 1 10 0c0 3.4-3 4.3-3 6M8 17h4M8.5 14h3'/%3E%3C/svg%3E");
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M8 14c0-1.7-3-2.6-3-6a5 5 0 0 1 10 0c0 3.4-3 4.3-3 6M8 17h4M8.5 14h3'/%3E%3C/svg%3E");
-	-webkit-mask-size: var(--checkbox-icon, 125%);
-	mask-size: var(--checkbox-icon, 125%);
-	-webkit-mask-position: center;
-	mask-position: center;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+input[data-task=I]:checked,
+li[data-task=I] > input:checked,
+li[data-task=I] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentcolor;
+  color: var(--octagon-yellow);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M8 14c0-1.7-3-2.6-3-6a5 5 0 0 1 10 0c0 3.4-3 4.3-3 6M8 17h4M8.5 14h3'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M8 14c0-1.7-3-2.6-3-6a5 5 0 0 1 10 0c0 3.4-3 4.3-3 6M8 17h4M8.5 14h3'/%3E%3C/svg%3E");
+  -webkit-mask-size: var(--checkbox-icon, 125%);
+  mask-size: var(--checkbox-icon, 125%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
-input[data-task="p"]:checked,
-li[data-task="p"] > input:checked,
-li[data-task="p"] > p > input:checked {
-	--checkbox-marker-color: transparent;
-	border: none;
-	border-radius: 0;
-	background-image: none;
-	background-color: currentcolor;
-	color: var(--octagon-green);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 6v8M6 10h8'/%3E%3C/svg%3E");
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 6v8M6 10h8'/%3E%3C/svg%3E");
-	-webkit-mask-size: var(--checkbox-icon, 125%);
-	mask-size: var(--checkbox-icon, 125%);
-	-webkit-mask-position: center;
-	mask-position: center;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+input[data-task=p]:checked,
+li[data-task=p] > input:checked,
+li[data-task=p] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentcolor;
+  color: var(--octagon-green);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 6v8M6 10h8'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 6v8M6 10h8'/%3E%3C/svg%3E");
+  -webkit-mask-size: var(--checkbox-icon, 125%);
+  mask-size: var(--checkbox-icon, 125%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
-input[data-task="c"]:checked,
-li[data-task="c"] > input:checked,
-li[data-task="c"] > p > input:checked {
-	--checkbox-marker-color: transparent;
-	border: none;
-	border-radius: 0;
-	background-image: none;
-	background-color: currentcolor;
-	color: var(--octagon-red);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M6 10h8'/%3E%3C/svg%3E");
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M6 10h8'/%3E%3C/svg%3E");
-	-webkit-mask-size: var(--checkbox-icon, 125%);
-	mask-size: var(--checkbox-icon, 125%);
-	-webkit-mask-position: center;
-	mask-position: center;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+input[data-task=c]:checked,
+li[data-task=c] > input:checked,
+li[data-task=c] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentcolor;
+  color: var(--octagon-red);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M6 10h8'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M6 10h8'/%3E%3C/svg%3E");
+  -webkit-mask-size: var(--checkbox-icon, 125%);
+  mask-size: var(--checkbox-icon, 125%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
-input[data-task="f"]:checked,
-li[data-task="f"] > input:checked,
-li[data-task="f"] > p > input:checked {
-	--checkbox-marker-color: transparent;
-	border: none;
-	border-radius: 0;
-	background-image: none;
-	background-color: currentcolor;
-	color: var(--octagon-orange);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 18c-3.5 0-6-2.4-6-5.8 0-2.3 1.4-4.1 3.5-6.2.1 2 1 3.1 2 3.7.1-3 1.5-5.3 3.1-7.2.2 3.1 3.4 5.8 3.4 9.6 0 3.5-2.4 5.9-6 5.9z'/%3E%3Cpath d='M10 18c-1.5 0-2.5-1.1-2.5-2.6 0-1.2.8-2.2 2.4-3.8.1 1.2.7 1.9 1.6 2.5.6 1.9-.1 3.9-1.5 3.9z'/%3E%3C/svg%3E");
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 18c-3.5 0-6-2.4-6-5.8 0-2.3 1.4-4.1 3.5-6.2.1 2 1 3.1 2 3.7.1-3 1.5-5.3 3.1-7.2.2 3.1 3.4 5.8 3.4 9.6 0 3.5-2.4 5.9-6 5.9z'/%3E%3Cpath d='M10 18c-1.5 0-2.5-1.1-2.5-2.6 0-1.2.8-2.2 2.4-3.8.1 1.2.7 1.9 1.6 2.5.6 1.9-.1 3.9-1.5 3.9z'/%3E%3C/svg%3E");
-	-webkit-mask-size: var(--checkbox-icon, 125%);
-	mask-size: var(--checkbox-icon, 125%);
-	-webkit-mask-position: center;
-	mask-position: center;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+input[data-task=f]:checked,
+li[data-task=f] > input:checked,
+li[data-task=f] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentcolor;
+  color: var(--octagon-orange);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 18c-3.5 0-6-2.4-6-5.8 0-2.3 1.4-4.1 3.5-6.2.1 2 1 3.1 2 3.7.1-3 1.5-5.3 3.1-7.2.2 3.1 3.4 5.8 3.4 9.6 0 3.5-2.4 5.9-6 5.9z'/%3E%3Cpath d='M10 18c-1.5 0-2.5-1.1-2.5-2.6 0-1.2.8-2.2 2.4-3.8.1 1.2.7 1.9 1.6 2.5.6 1.9-.1 3.9-1.5 3.9z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 18c-3.5 0-6-2.4-6-5.8 0-2.3 1.4-4.1 3.5-6.2.1 2 1 3.1 2 3.7.1-3 1.5-5.3 3.1-7.2.2 3.1 3.4 5.8 3.4 9.6 0 3.5-2.4 5.9-6 5.9z'/%3E%3Cpath d='M10 18c-1.5 0-2.5-1.1-2.5-2.6 0-1.2.8-2.2 2.4-3.8.1 1.2.7 1.9 1.6 2.5.6 1.9-.1 3.9-1.5 3.9z'/%3E%3C/svg%3E");
+  -webkit-mask-size: var(--checkbox-icon, 125%);
+  mask-size: var(--checkbox-icon, 125%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
-input[data-task="u"]:checked,
-li[data-task="u"] > input:checked,
-li[data-task="u"] > p > input:checked {
-	--checkbox-marker-color: transparent;
-	border: none;
-	border-radius: 0;
-	background-image: none;
-	background-color: currentcolor;
-	color: var(--octagon-teal);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 17V4M5 9l5-5 5 5'/%3E%3C/svg%3E");
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 17V4M5 9l5-5 5 5'/%3E%3C/svg%3E");
-	-webkit-mask-size: var(--checkbox-icon, 125%);
-	mask-size: var(--checkbox-icon, 125%);
-	-webkit-mask-position: center;
-	mask-position: center;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+input[data-task=u]:checked,
+li[data-task=u] > input:checked,
+li[data-task=u] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentcolor;
+  color: var(--octagon-teal);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 17V4M5 9l5-5 5 5'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 17V4M5 9l5-5 5 5'/%3E%3C/svg%3E");
+  -webkit-mask-size: var(--checkbox-icon, 125%);
+  mask-size: var(--checkbox-icon, 125%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
-input[data-task="d"]:checked,
-li[data-task="d"] > input:checked,
-li[data-task="d"] > p > input:checked {
-	--checkbox-marker-color: transparent;
-	border: none;
-	border-radius: 0;
-	background-image: none;
-	background-color: currentcolor;
-	color: var(--octagon-red);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 3v13m-5-5 5 5 5-5'/%3E%3C/svg%3E");
-	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 3v13m-5-5 5 5 5-5'/%3E%3C/svg%3E");
-	-webkit-mask-size: var(--checkbox-icon, 125%);
-	mask-size: var(--checkbox-icon, 125%);
-	-webkit-mask-position: center;
-	mask-position: center;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+input[data-task=d]:checked,
+li[data-task=d] > input:checked,
+li[data-task=d] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentcolor;
+  color: var(--octagon-red);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 3v13m-5-5 5 5 5-5'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 3v13m-5-5 5 5 5-5'/%3E%3C/svg%3E");
+  -webkit-mask-size: var(--checkbox-icon, 125%);
+  mask-size: var(--checkbox-icon, 125%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 /* @settings
@@ -639,9 +1002,350 @@ settings:
         value: octagon-accent-purple
   -
     id: octagon-colored-headings
-    title: Colorized headings
-    description: Use Octagon colors for heading levels
+    title: Enable heading colors
+    description: Apply the heading colors configured below
     type: class-toggle
+  -
+    id: octagon-h1-color
+    title: Heading 1 color
+    type: class-select
+    allowEmpty: false
+    default: octagon-h1-accent
+    options:
+      -
+        label: Accent
+        value: octagon-h1-accent
+      -
+        label: Red
+        value: octagon-h1-red
+      -
+        label: Orange
+        value: octagon-h1-orange
+      -
+        label: Yellow
+        value: octagon-h1-yellow
+      -
+        label: Green
+        value: octagon-h1-green
+      -
+        label: Teal
+        value: octagon-h1-teal
+      -
+        label: Purple
+        value: octagon-h1-purple
+  -
+    id: octagon-h2-color
+    title: Heading 2 color
+    type: class-select
+    allowEmpty: false
+    default: octagon-h2-yellow
+    options:
+      -
+        label: Red
+        value: octagon-h2-red
+      -
+        label: Orange
+        value: octagon-h2-orange
+      -
+        label: Yellow
+        value: octagon-h2-yellow
+      -
+        label: Green
+        value: octagon-h2-green
+      -
+        label: Teal
+        value: octagon-h2-teal
+      -
+        label: Purple
+        value: octagon-h2-purple
+  -
+    id: octagon-h3-color
+    title: Heading 3 color
+    type: class-select
+    allowEmpty: false
+    default: octagon-h3-orange
+    options:
+      -
+        label: Red
+        value: octagon-h3-red
+      -
+        label: Orange
+        value: octagon-h3-orange
+      -
+        label: Yellow
+        value: octagon-h3-yellow
+      -
+        label: Green
+        value: octagon-h3-green
+      -
+        label: Teal
+        value: octagon-h3-teal
+      -
+        label: Purple
+        value: octagon-h3-purple
+  -
+    id: octagon-h4-color
+    title: Heading 4 color
+    type: class-select
+    allowEmpty: false
+    default: octagon-h4-teal
+    options:
+      -
+        label: Red
+        value: octagon-h4-red
+      -
+        label: Orange
+        value: octagon-h4-orange
+      -
+        label: Yellow
+        value: octagon-h4-yellow
+      -
+        label: Green
+        value: octagon-h4-green
+      -
+        label: Teal
+        value: octagon-h4-teal
+      -
+        label: Purple
+        value: octagon-h4-purple
+  -
+    id: octagon-h5-color
+    title: Heading 5 color
+    type: class-select
+    allowEmpty: false
+    default: octagon-h5-purple
+    options:
+      -
+        label: Red
+        value: octagon-h5-red
+      -
+        label: Orange
+        value: octagon-h5-orange
+      -
+        label: Yellow
+        value: octagon-h5-yellow
+      -
+        label: Green
+        value: octagon-h5-green
+      -
+        label: Teal
+        value: octagon-h5-teal
+      -
+        label: Purple
+        value: octagon-h5-purple
+  -
+    id: octagon-h6-color
+    title: Heading 6 color
+    type: class-select
+    allowEmpty: false
+    default: octagon-h6-green
+    options:
+      -
+        label: Red
+        value: octagon-h6-red
+      -
+        label: Orange
+        value: octagon-h6-orange
+      -
+        label: Yellow
+        value: octagon-h6-yellow
+      -
+        label: Green
+        value: octagon-h6-green
+      -
+        label: Teal
+        value: octagon-h6-teal
+      -
+        label: Purple
+        value: octagon-h6-purple
+  -
+    id: octagon-blockquote-color
+    title: Blockquote border color
+    type: class-select
+    allowEmpty: false
+    default: octagon-blockquote-accent
+    options:
+      -
+        label: Accent
+        value: octagon-blockquote-accent
+      -
+        label: Red
+        value: octagon-blockquote-red
+      -
+        label: Orange
+        value: octagon-blockquote-orange
+      -
+        label: Yellow
+        value: octagon-blockquote-yellow
+      -
+        label: Green
+        value: octagon-blockquote-green
+      -
+        label: Teal
+        value: octagon-blockquote-teal
+      -
+        label: Purple
+        value: octagon-blockquote-purple
+  -
+    id: octagon-numbered-list-color
+    title: Numbered list marker color
+    type: class-select
+    allowEmpty: false
+    default: octagon-numbered-list-accent
+    options:
+      -
+        label: Accent
+        value: octagon-numbered-list-accent
+      -
+        label: Red
+        value: octagon-numbered-list-red
+      -
+        label: Orange
+        value: octagon-numbered-list-orange
+      -
+        label: Yellow
+        value: octagon-numbered-list-yellow
+      -
+        label: Green
+        value: octagon-numbered-list-green
+      -
+        label: Teal
+        value: octagon-numbered-list-teal
+      -
+        label: Purple
+        value: octagon-numbered-list-purple
+  -
+    id: octagon-bulleted-list-color
+    title: Bulleted list marker color
+    type: class-select
+    allowEmpty: false
+    default: octagon-bulleted-list-accent
+    options:
+      -
+        label: Accent
+        value: octagon-bulleted-list-accent
+      -
+        label: Red
+        value: octagon-bulleted-list-red
+      -
+        label: Orange
+        value: octagon-bulleted-list-orange
+      -
+        label: Yellow
+        value: octagon-bulleted-list-yellow
+      -
+        label: Green
+        value: octagon-bulleted-list-green
+      -
+        label: Teal
+        value: octagon-bulleted-list-teal
+      -
+        label: Purple
+        value: octagon-bulleted-list-purple
+  -
+    id: octagon-checkbox-color
+    title: Checkbox color
+    description: Color for checked checkboxes
+    type: class-select
+    allowEmpty: false
+    default: octagon-checkbox-green
+    options:
+      -
+        label: Red
+        value: octagon-checkbox-red
+      -
+        label: Orange
+        value: octagon-checkbox-orange
+      -
+        label: Yellow
+        value: octagon-checkbox-yellow
+      -
+        label: Green
+        value: octagon-checkbox-green
+      -
+        label: Teal
+        value: octagon-checkbox-teal
+      -
+        label: Purple
+        value: octagon-checkbox-purple
+  -
+    id: octagon-internal-link-color
+    title: Internal link color
+    description: Color for resolved internal links
+    type: class-select
+    allowEmpty: false
+    default: octagon-internal-link-teal
+    options:
+      -
+        label: Red
+        value: octagon-internal-link-red
+      -
+        label: Orange
+        value: octagon-internal-link-orange
+      -
+        label: Yellow
+        value: octagon-internal-link-yellow
+      -
+        label: Green
+        value: octagon-internal-link-green
+      -
+        label: Teal
+        value: octagon-internal-link-teal
+      -
+        label: Purple
+        value: octagon-internal-link-purple
+  -
+    id: octagon-external-link-color
+    title: External link color
+    description: Color for web links
+    type: class-select
+    allowEmpty: false
+    default: octagon-external-link-purple
+    options:
+      -
+        label: Red
+        value: octagon-external-link-red
+      -
+        label: Orange
+        value: octagon-external-link-orange
+      -
+        label: Yellow
+        value: octagon-external-link-yellow
+      -
+        label: Green
+        value: octagon-external-link-green
+      -
+        label: Teal
+        value: octagon-external-link-teal
+      -
+        label: Purple
+        value: octagon-external-link-purple
+  -
+    id: octagon-unresolved-link-color
+    title: Unresolved link color
+    description: Color for internal links whose note does not exist
+    type: class-select
+    allowEmpty: false
+    default: octagon-unresolved-link-orange
+    options:
+      -
+        label: Red
+        value: octagon-unresolved-link-red
+      -
+        label: Orange
+        value: octagon-unresolved-link-orange
+      -
+        label: Yellow
+        value: octagon-unresolved-link-yellow
+      -
+        label: Green
+        value: octagon-unresolved-link-green
+      -
+        label: Teal
+        value: octagon-unresolved-link-teal
+      -
+        label: Purple
+        value: octagon-unresolved-link-purple
   -
     id: octagon-rounded-corners
     title: Rounded corners

@@ -30,9 +30,350 @@ settings:
         value: octagon-accent-purple
   -
     id: octagon-colored-headings
-    title: Colorized headings
-    description: Use Octagon colors for heading levels
+    title: Enable heading colors
+    description: Apply the heading colors configured below
     type: class-toggle
+  -
+    id: octagon-h1-color
+    title: Heading 1 color
+    type: class-select
+    allowEmpty: false
+    default: octagon-h1-accent
+    options:
+      -
+        label: Accent
+        value: octagon-h1-accent
+      -
+        label: Red
+        value: octagon-h1-red
+      -
+        label: Orange
+        value: octagon-h1-orange
+      -
+        label: Yellow
+        value: octagon-h1-yellow
+      -
+        label: Green
+        value: octagon-h1-green
+      -
+        label: Teal
+        value: octagon-h1-teal
+      -
+        label: Purple
+        value: octagon-h1-purple
+  -
+    id: octagon-h2-color
+    title: Heading 2 color
+    type: class-select
+    allowEmpty: false
+    default: octagon-h2-yellow
+    options:
+      -
+        label: Red
+        value: octagon-h2-red
+      -
+        label: Orange
+        value: octagon-h2-orange
+      -
+        label: Yellow
+        value: octagon-h2-yellow
+      -
+        label: Green
+        value: octagon-h2-green
+      -
+        label: Teal
+        value: octagon-h2-teal
+      -
+        label: Purple
+        value: octagon-h2-purple
+  -
+    id: octagon-h3-color
+    title: Heading 3 color
+    type: class-select
+    allowEmpty: false
+    default: octagon-h3-orange
+    options:
+      -
+        label: Red
+        value: octagon-h3-red
+      -
+        label: Orange
+        value: octagon-h3-orange
+      -
+        label: Yellow
+        value: octagon-h3-yellow
+      -
+        label: Green
+        value: octagon-h3-green
+      -
+        label: Teal
+        value: octagon-h3-teal
+      -
+        label: Purple
+        value: octagon-h3-purple
+  -
+    id: octagon-h4-color
+    title: Heading 4 color
+    type: class-select
+    allowEmpty: false
+    default: octagon-h4-teal
+    options:
+      -
+        label: Red
+        value: octagon-h4-red
+      -
+        label: Orange
+        value: octagon-h4-orange
+      -
+        label: Yellow
+        value: octagon-h4-yellow
+      -
+        label: Green
+        value: octagon-h4-green
+      -
+        label: Teal
+        value: octagon-h4-teal
+      -
+        label: Purple
+        value: octagon-h4-purple
+  -
+    id: octagon-h5-color
+    title: Heading 5 color
+    type: class-select
+    allowEmpty: false
+    default: octagon-h5-purple
+    options:
+      -
+        label: Red
+        value: octagon-h5-red
+      -
+        label: Orange
+        value: octagon-h5-orange
+      -
+        label: Yellow
+        value: octagon-h5-yellow
+      -
+        label: Green
+        value: octagon-h5-green
+      -
+        label: Teal
+        value: octagon-h5-teal
+      -
+        label: Purple
+        value: octagon-h5-purple
+  -
+    id: octagon-h6-color
+    title: Heading 6 color
+    type: class-select
+    allowEmpty: false
+    default: octagon-h6-green
+    options:
+      -
+        label: Red
+        value: octagon-h6-red
+      -
+        label: Orange
+        value: octagon-h6-orange
+      -
+        label: Yellow
+        value: octagon-h6-yellow
+      -
+        label: Green
+        value: octagon-h6-green
+      -
+        label: Teal
+        value: octagon-h6-teal
+      -
+        label: Purple
+        value: octagon-h6-purple
+  -
+    id: octagon-blockquote-color
+    title: Blockquote border color
+    type: class-select
+    allowEmpty: false
+    default: octagon-blockquote-accent
+    options:
+      -
+        label: Accent
+        value: octagon-blockquote-accent
+      -
+        label: Red
+        value: octagon-blockquote-red
+      -
+        label: Orange
+        value: octagon-blockquote-orange
+      -
+        label: Yellow
+        value: octagon-blockquote-yellow
+      -
+        label: Green
+        value: octagon-blockquote-green
+      -
+        label: Teal
+        value: octagon-blockquote-teal
+      -
+        label: Purple
+        value: octagon-blockquote-purple
+  -
+    id: octagon-numbered-list-color
+    title: Numbered list marker color
+    type: class-select
+    allowEmpty: false
+    default: octagon-numbered-list-accent
+    options:
+      -
+        label: Accent
+        value: octagon-numbered-list-accent
+      -
+        label: Red
+        value: octagon-numbered-list-red
+      -
+        label: Orange
+        value: octagon-numbered-list-orange
+      -
+        label: Yellow
+        value: octagon-numbered-list-yellow
+      -
+        label: Green
+        value: octagon-numbered-list-green
+      -
+        label: Teal
+        value: octagon-numbered-list-teal
+      -
+        label: Purple
+        value: octagon-numbered-list-purple
+  -
+    id: octagon-bulleted-list-color
+    title: Bulleted list marker color
+    type: class-select
+    allowEmpty: false
+    default: octagon-bulleted-list-accent
+    options:
+      -
+        label: Accent
+        value: octagon-bulleted-list-accent
+      -
+        label: Red
+        value: octagon-bulleted-list-red
+      -
+        label: Orange
+        value: octagon-bulleted-list-orange
+      -
+        label: Yellow
+        value: octagon-bulleted-list-yellow
+      -
+        label: Green
+        value: octagon-bulleted-list-green
+      -
+        label: Teal
+        value: octagon-bulleted-list-teal
+      -
+        label: Purple
+        value: octagon-bulleted-list-purple
+  -
+    id: octagon-checkbox-color
+    title: Checkbox color
+    description: Color for checked checkboxes
+    type: class-select
+    allowEmpty: false
+    default: octagon-checkbox-green
+    options:
+      -
+        label: Red
+        value: octagon-checkbox-red
+      -
+        label: Orange
+        value: octagon-checkbox-orange
+      -
+        label: Yellow
+        value: octagon-checkbox-yellow
+      -
+        label: Green
+        value: octagon-checkbox-green
+      -
+        label: Teal
+        value: octagon-checkbox-teal
+      -
+        label: Purple
+        value: octagon-checkbox-purple
+  -
+    id: octagon-internal-link-color
+    title: Internal link color
+    description: Color for resolved internal links
+    type: class-select
+    allowEmpty: false
+    default: octagon-internal-link-teal
+    options:
+      -
+        label: Red
+        value: octagon-internal-link-red
+      -
+        label: Orange
+        value: octagon-internal-link-orange
+      -
+        label: Yellow
+        value: octagon-internal-link-yellow
+      -
+        label: Green
+        value: octagon-internal-link-green
+      -
+        label: Teal
+        value: octagon-internal-link-teal
+      -
+        label: Purple
+        value: octagon-internal-link-purple
+  -
+    id: octagon-external-link-color
+    title: External link color
+    description: Color for web links
+    type: class-select
+    allowEmpty: false
+    default: octagon-external-link-purple
+    options:
+      -
+        label: Red
+        value: octagon-external-link-red
+      -
+        label: Orange
+        value: octagon-external-link-orange
+      -
+        label: Yellow
+        value: octagon-external-link-yellow
+      -
+        label: Green
+        value: octagon-external-link-green
+      -
+        label: Teal
+        value: octagon-external-link-teal
+      -
+        label: Purple
+        value: octagon-external-link-purple
+  -
+    id: octagon-unresolved-link-color
+    title: Unresolved link color
+    description: Color for internal links whose note does not exist
+    type: class-select
+    allowEmpty: false
+    default: octagon-unresolved-link-orange
+    options:
+      -
+        label: Red
+        value: octagon-unresolved-link-red
+      -
+        label: Orange
+        value: octagon-unresolved-link-orange
+      -
+        label: Yellow
+        value: octagon-unresolved-link-yellow
+      -
+        label: Green
+        value: octagon-unresolved-link-green
+      -
+        label: Teal
+        value: octagon-unresolved-link-teal
+      -
+        label: Purple
+        value: octagon-unresolved-link-purple
   -
     id: octagon-rounded-corners
     title: Rounded corners

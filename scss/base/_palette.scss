@@ -74,11 +74,11 @@ body.theme-dark {
 
 	--bold-color: var(--octagon-yellow);
 	--italic-color: var(--octagon-purple);
-	--link-color: var(--octagon-teal);
-	--link-color-hover: var(--octagon-green);
-	--link-external-color: var(--octagon-purple);
-	--link-external-color-hover: var(--octagon-pink);
-	--link-unresolved-color: var(--octagon-orange);
+	--link-color: var(--octagon-internal-link-color, var(--octagon-teal));
+	--link-color-hover: var(--link-color);
+	--link-external-color: var(--octagon-external-link-color, var(--octagon-purple));
+	--link-external-color-hover: var(--link-external-color);
+	--link-unresolved-color: var(--octagon-unresolved-link-color, var(--octagon-orange));
 	--tag-color: var(--octagon-teal);
 	--tag-color-hover: var(--octagon-foreground);
 	--code-normal: var(--octagon-foreground);
@@ -91,9 +91,10 @@ body.theme-dark {
 	--code-tag: var(--octagon-red);
 	--code-value: var(--octagon-orange);
 	--code-background: var(--color-base-10);
-	--blockquote-border-color: var(--octagon-accent);
-	--list-marker-color: var(--octagon-accent);
-	--checklist-done-color: var(--octagon-green);
+	--blockquote-border-color: var(--octagon-blockquote-color, var(--octagon-accent));
+	--list-marker-color: var(--octagon-bulleted-list-color, var(--octagon-accent));
+	--checkbox-color: var(--octagon-checkbox-color, var(--octagon-accent));
+	--checklist-done-color: var(--octagon-checkbox-color, var(--octagon-green));
 	--graph-node-focused: var(--octagon-accent);
 	--graph-node-tag: var(--octagon-green);
 	--graph-node-attachment: var(--octagon-yellow);
@@ -161,12 +162,59 @@ body.theme-dark {
 }
 
 .theme-dark.octagon-colored-headings {
-	--h1-color: var(--octagon-accent);
-	--h2-color: var(--octagon-yellow);
-	--h3-color: var(--octagon-orange);
-	--h4-color: var(--octagon-teal);
-	--h5-color: var(--octagon-purple);
-	--h6-color: var(--octagon-green);
+	--h1-color: var(--octagon-h1-color, var(--octagon-accent));
+	--h2-color: var(--octagon-h2-color, var(--octagon-yellow));
+	--h3-color: var(--octagon-h3-color, var(--octagon-orange));
+	--h4-color: var(--octagon-h4-color, var(--octagon-teal));
+	--h5-color: var(--octagon-h5-color, var(--octagon-purple));
+	--h6-color: var(--octagon-h6-color, var(--octagon-green));
+}
+
+.theme-dark.octagon-h1-accent {
+	--octagon-h1-color: var(--octagon-accent);
+}
+
+$octagon-palette: (
+	"red": var(--octagon-red),
+	"orange": var(--octagon-orange),
+	"yellow": var(--octagon-yellow),
+	"green": var(--octagon-green),
+	"teal": var(--octagon-teal),
+	"purple": var(--octagon-purple)
+);
+
+@mixin octagon-palette-setting($class-prefix, $variable) {
+	@each $name, $color in $octagon-palette {
+		.theme-dark.#{$class-prefix}-#{$name} {
+			#{$variable}: $color;
+		}
+	}
+}
+
+@include octagon-palette-setting("octagon-h1", "--octagon-h1-color");
+@include octagon-palette-setting("octagon-h2", "--octagon-h2-color");
+@include octagon-palette-setting("octagon-h3", "--octagon-h3-color");
+@include octagon-palette-setting("octagon-h4", "--octagon-h4-color");
+@include octagon-palette-setting("octagon-h5", "--octagon-h5-color");
+@include octagon-palette-setting("octagon-h6", "--octagon-h6-color");
+@include octagon-palette-setting("octagon-blockquote", "--octagon-blockquote-color");
+@include octagon-palette-setting("octagon-numbered-list", "--octagon-numbered-list-color");
+@include octagon-palette-setting("octagon-bulleted-list", "--octagon-bulleted-list-color");
+@include octagon-palette-setting("octagon-checkbox", "--octagon-checkbox-color");
+@include octagon-palette-setting("octagon-internal-link", "--octagon-internal-link-color");
+@include octagon-palette-setting("octagon-external-link", "--octagon-external-link-color");
+@include octagon-palette-setting("octagon-unresolved-link", "--octagon-unresolved-link-color");
+
+.theme-dark.octagon-blockquote-accent {
+	--octagon-blockquote-color: var(--octagon-accent);
+}
+
+.theme-dark.octagon-numbered-list-accent {
+	--octagon-numbered-list-color: var(--octagon-accent);
+}
+
+.theme-dark.octagon-bulleted-list-accent {
+	--octagon-bulleted-list-color: var(--octagon-accent);
 }
 
 .theme-dark.octagon-rounded-corners {

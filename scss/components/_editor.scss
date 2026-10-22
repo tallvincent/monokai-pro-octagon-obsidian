@@ -64,12 +64,50 @@
 	border-inline-start-color: var(--blockquote-border-color);
 }
 
+.markdown-source-view.mod-cm6 .cm-formatting-quote {
+	color: var(--blockquote-border-color);
+}
+
+.markdown-rendered ul > li::marker,
+.markdown-rendered ul > li > .list-bullet::after,
+.markdown-source-view.mod-cm6 .cm-formatting-list-ul {
+	color: var(--octagon-bulleted-list-color, var(--octagon-accent));
+}
+
+.markdown-rendered ol > li::marker,
+.markdown-rendered ol > li > .list-number,
+.markdown-source-view.mod-cm6 .cm-formatting-list-ol,
+.markdown-source-view.mod-cm6 .list-number {
+	color: var(--octagon-numbered-list-color, var(--octagon-accent));
+}
+
 .markdown-rendered mark {
 	color: var(--text-normal);
 }
 
-.markdown-rendered a:hover {
-	text-decoration: underline;
+/* Obsidian and Bases can add their own underlines; force the requested hover-only behavior. */
+/* stylelint-disable declaration-no-important */
+body.theme-dark :is(a, .internal-link, .external-link, .is-unresolved, .cm-underline, .cm-link, .cm-url):not(:hover) {
+	text-decoration: none !important;
+}
+
+body.theme-dark :is(a, .internal-link, .external-link, .is-unresolved, .cm-underline, .cm-link, .cm-url):hover {
+	text-decoration: underline !important;
+}
+/* stylelint-enable declaration-no-important */
+
+body.theme-dark .internal-link:hover,
+body.theme-dark .cm-hmd-internal-link:hover {
+	color: var(--link-color);
+}
+
+body.theme-dark .external-link:hover,
+body.theme-dark .cm-url:hover {
+	color: var(--link-external-color);
+}
+
+body.theme-dark .is-unresolved:hover {
+	color: var(--link-unresolved-color);
 }
 
 /* Checklist status icons */
@@ -84,14 +122,14 @@
 .markdown-rendered li[data-task="X"] > p,
 .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
 .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
-	color: var(--octagon-accent);
+	color: var(--checklist-done-color);
 	text-decoration-line: line-through;
-	text-decoration-color: var(--octagon-accent);
+	text-decoration-color: var(--checklist-done-color);
 }
 
 .markdown-rendered li[data-task="x"] > p *,
 .markdown-rendered li[data-task="X"] > p * {
-	color: var(--octagon-accent);
+	color: var(--checklist-done-color);
 }
 
 /* Cancelled tasks are muted and struck through. */
