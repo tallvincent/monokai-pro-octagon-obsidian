@@ -1,6 +1,6 @@
 {
 	"name": "monokai-pro-octagon-theme",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"scripts": {
 		"build": "sass --no-source-map --style=expanded scss/main.scss theme.css",
 		"watch": "sass --no-source-map --style=expanded --watch scss/main.scss:theme.css",
