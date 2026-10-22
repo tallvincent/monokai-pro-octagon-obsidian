@@ -9,7 +9,7 @@ body.theme-dark {
 	--octagon-foreground: #eaf2f1;
 	--octagon-selection: #535763;
 	--octagon-cursor: #b2b9bd;
-	--octagon-accent: var(--octagon-green);
+	--octagon-accent: var(--octagon-orange);
 
 	--color-base-00: var(--octagon-background);
 	--color-base-05: #2d2f3e;
@@ -57,9 +57,9 @@ body.theme-dark {
 	--text-selection: var(--octagon-selection);
 	--text-highlight-bg: rgb(255 215 109 / 24%);
 
-	--accent-h: 77;
-	--accent-s: 60%;
-	--accent-l: 61%;
+	--accent-h: 23;
+	--accent-s: 100%;
+	--accent-l: 68%;
 	--color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
 	--color-accent-1: var(--color-accent);
 	--color-accent-2: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 6%));

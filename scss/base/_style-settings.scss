@@ -8,7 +8,7 @@ settings:
     description: Choose an accent from the Octagon palette
     type: class-select
     allowEmpty: false
-    default: octagon-accent-green
+    default: octagon-accent-orange
     options:
       -
         label: Red
@@ -38,7 +38,7 @@ settings:
     title: Heading 1 color
     type: class-select
     allowEmpty: false
-    default: octagon-h1-accent
+    default: octagon-h1-red
     options:
       -
         label: Accent
@@ -116,7 +116,7 @@ settings:
     title: Heading 4 color
     type: class-select
     allowEmpty: false
-    default: octagon-h4-teal
+    default: octagon-h4-green
     options:
       -
         label: Red
@@ -141,7 +141,7 @@ settings:
     title: Heading 5 color
     type: class-select
     allowEmpty: false
-    default: octagon-h5-purple
+    default: octagon-h5-teal
     options:
       -
         label: Red
@@ -166,7 +166,7 @@ settings:
     title: Heading 6 color
     type: class-select
     allowEmpty: false
-    default: octagon-h6-green
+    default: octagon-h6-purple
     options:
       -
         label: Red

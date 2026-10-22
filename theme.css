@@ -9,7 +9,7 @@ body.theme-dark {
   --octagon-foreground: #eaf2f1;
   --octagon-selection: #535763;
   --octagon-cursor: #b2b9bd;
-  --octagon-accent: var(--octagon-green);
+  --octagon-accent: var(--octagon-orange);
   --color-base-00: var(--octagon-background);
   --color-base-05: #2d2f3e;
   --color-base-10: #303241;
@@ -54,9 +54,9 @@ body.theme-dark {
   --text-accent-hover: var(--color-accent-2);
   --text-selection: var(--octagon-selection);
   --text-highlight-bg: rgb(255 215 109 / 24%);
-  --accent-h: 77;
-  --accent-s: 60%;
-  --accent-l: 61%;
+  --accent-h: 23;
+  --accent-s: 100%;
+  --accent-l: 68%;
   --color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
   --color-accent-1: var(--color-accent);
   --color-accent-2: hsl(var(--accent-h) var(--accent-s) calc(var(--accent-l) + 6%));
@@ -637,6 +637,11 @@ body.theme-dark :is(a, .internal-link, .external-link, .is-unresolved, .cm-under
   text-decoration-line: none;
 }
 
+body.theme-dark .markdown-rendered a.external-link:not(:hover),
+body.theme-dark a.external-link:not(:hover) {
+  text-decoration-line: none;
+}
+
 body.theme-dark :is(a, .internal-link, .external-link, .is-unresolved, .cm-underline, .cm-link, .cm-url):hover {
   text-decoration-line: underline;
 }
@@ -985,7 +990,7 @@ settings:
     description: Choose an accent from the Octagon palette
     type: class-select
     allowEmpty: false
-    default: octagon-accent-green
+    default: octagon-accent-orange
     options:
       -
         label: Red
@@ -1015,7 +1020,7 @@ settings:
     title: Heading 1 color
     type: class-select
     allowEmpty: false
-    default: octagon-h1-accent
+    default: octagon-h1-red
     options:
       -
         label: Accent
@@ -1093,7 +1098,7 @@ settings:
     title: Heading 4 color
     type: class-select
     allowEmpty: false
-    default: octagon-h4-teal
+    default: octagon-h4-green
     options:
       -
         label: Red
@@ -1118,7 +1123,7 @@ settings:
     title: Heading 5 color
     type: class-select
     allowEmpty: false
-    default: octagon-h5-purple
+    default: octagon-h5-teal
     options:
       -
         label: Red
@@ -1143,7 +1148,7 @@ settings:
     title: Heading 6 color
     type: class-select
     allowEmpty: false
-    default: octagon-h6-green
+    default: octagon-h6-purple
     options:
       -
         label: Red
