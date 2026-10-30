@@ -142,6 +142,8 @@ body.theme-dark .is-unresolved:hover {
 	text-decoration-line: none;
 }
 
+/* These option-specific task selectors overlap intentionally; their declarations set separate task states/properties. */
+/* stylelint-disable no-descending-specificity */
 .theme-dark.octagon-completed-task-strikethrough .markdown-rendered li[data-task="x"],
 .theme-dark.octagon-completed-task-strikethrough .markdown-rendered li[data-task="X"],
 .theme-dark.octagon-completed-task-strikethrough .markdown-rendered li[data-task="x"]>p,
@@ -204,6 +206,7 @@ body.theme-dark .is-unresolved:hover {
 }
 
 /* Keep WebKit mask support for Obsidian's Chromium runtime and custom task selectors. */
+/* stylelint-enable no-descending-specificity */
 /* stylelint-disable declaration-empty-line-before, no-descending-specificity, property-no-vendor-prefix */
 @mixin task-icon($task, $color, $icon, $icon-size: 125%) {
 
