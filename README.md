@@ -1,4 +1,4 @@
-# Monokai Pro Octagon for Obsidian
+# Monokai Pro Octagon theme for Obsidian
 
 An Obsidian dark theme based on the Octagon variant of [Monokai Pro](https://monokai.pro/).
 
