@@ -177,7 +177,7 @@ body.theme-dark .is-unresolved:hover {
 
 /* Keep WebKit mask support for Obsidian's Chromium runtime and custom task selectors. */
 /* stylelint-disable declaration-empty-line-before, no-descending-specificity, property-no-vendor-prefix */
-@mixin task-icon($task, $color, $icon) {
+@mixin task-icon($task, $color, $icon, $icon-size: 125%) {
 
 	input[data-task="#{$task}"]:checked,
 	li[data-task="#{$task}"]>input:checked,
@@ -191,8 +191,8 @@ body.theme-dark .is-unresolved:hover {
 		color: $color;
 		-webkit-mask-image: $icon;
 		mask-image: $icon;
-		-webkit-mask-size: var(--checkbox-icon, 125%);
-		mask-size: var(--checkbox-icon, 125%);
+		-webkit-mask-size: var(--checkbox-icon, $icon-size);
+		mask-size: var(--checkbox-icon, $icon-size);
 		-webkit-mask-position: center;
 		mask-position: center;
 		-webkit-mask-repeat: no-repeat;
@@ -230,7 +230,8 @@ body.theme-dark .is-unresolved:hover {
 
 @include task-icon("l",
 	var(--octagon-red),
-	url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 18s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10z'/%3E%3Ccircle cx='10' cy='8' r='2'/%3E%3C/svg%3E"));
+	url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 18s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10z'/%3E%3Ccircle cx='10' cy='8' r='2'/%3E%3C/svg%3E"),
+	110%);
 
 @include task-icon("i",
 	var(--octagon-teal),
