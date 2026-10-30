@@ -1052,6 +1052,12 @@ li[data-task=d] > p > input:checked {
   mask-repeat: no-repeat;
 }
 
+.theme-dark.octagon-rounded-corners input[data-task="/"]:checked,
+.theme-dark.octagon-rounded-corners li[data-task="/"] > input:checked,
+.theme-dark.octagon-rounded-corners li[data-task="/"] > p > input:checked {
+  border-radius: var(--checkbox-radius);
+}
+
 /* @settings
 name: Monokai Pro Octagon
 id: monokai-pro-octagon

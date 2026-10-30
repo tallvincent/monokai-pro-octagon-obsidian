@@ -260,3 +260,9 @@ body.theme-dark .is-unresolved:hover {
 @include task-icon("d",
 	var(--octagon-red),
 	url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M10 3v13m-5-5 5 5 5-5'/%3E%3C/svg%3E"));
+
+.theme-dark.octagon-rounded-corners input[data-task="/"]:checked,
+.theme-dark.octagon-rounded-corners li[data-task="/"]>input:checked,
+.theme-dark.octagon-rounded-corners li[data-task="/"]>p>input:checked {
+	border-radius: var(--checkbox-radius);
+}
