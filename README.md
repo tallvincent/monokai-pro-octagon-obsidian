@@ -48,6 +48,7 @@ Customization is optional. Install and enable the Style Settings community plugi
 - Blockquote border color
 - Numbered and bulleted list marker colors
 - Checkbox color
+- Optional strikethrough for completed tasks (off by default), with an option to match the checkbox color
 - Internal, external, and unresolved link colors
 - Tag color and appearance (soft or text); rounded tags follow the Rounded corners setting
 - Rounded corners (squared by default)

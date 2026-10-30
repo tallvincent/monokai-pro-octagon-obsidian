@@ -711,17 +711,45 @@ body.theme-dark .is-unresolved:hover {
 
 /* Obsidian uses a camel-cased internal class and Sass emits simple task values unquoted. */
 /* stylelint-disable selector-class-pattern, selector-attribute-quotes */
+.markdown-rendered li[data-task=x],
+.markdown-rendered li[data-task=X] {
+  text-decoration-line: none;
+}
+
 .markdown-rendered li[data-task=x] > p,
 .markdown-rendered li[data-task=X] > p,
 .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=x],
 .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=X] {
-  color: var(--checklist-done-color);
+  color: var(--text-normal);
+  text-decoration-line: none;
+}
+
+.theme-dark.octagon-completed-task-strikethrough .markdown-rendered li[data-task=x],
+.theme-dark.octagon-completed-task-strikethrough .markdown-rendered li[data-task=X],
+.theme-dark.octagon-completed-task-strikethrough .markdown-rendered li[data-task=x] > p,
+.theme-dark.octagon-completed-task-strikethrough .markdown-rendered li[data-task=X] > p,
+.theme-dark.octagon-completed-task-strikethrough .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=x],
+.theme-dark.octagon-completed-task-strikethrough .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=X] {
   text-decoration-line: line-through;
+}
+
+.theme-dark.octagon-completed-task-strikethrough-match-checkbox-color .markdown-rendered li[data-task=x],
+.theme-dark.octagon-completed-task-strikethrough-match-checkbox-color .markdown-rendered li[data-task=X],
+.theme-dark.octagon-completed-task-strikethrough-match-checkbox-color .markdown-rendered li[data-task=x] > p,
+.theme-dark.octagon-completed-task-strikethrough-match-checkbox-color .markdown-rendered li[data-task=X] > p,
+.theme-dark.octagon-completed-task-strikethrough-match-checkbox-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=x],
+.theme-dark.octagon-completed-task-strikethrough-match-checkbox-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=X] {
   text-decoration-color: var(--checklist-done-color);
 }
 
-.markdown-rendered li[data-task=x] > p *,
-.markdown-rendered li[data-task=X] > p * {
+.theme-dark.octagon-completed-task-strikethrough-match-checkbox-color .markdown-rendered li[data-task=x] > p,
+.theme-dark.octagon-completed-task-strikethrough-match-checkbox-color .markdown-rendered li[data-task=X] > p,
+.theme-dark.octagon-completed-task-strikethrough-match-checkbox-color .markdown-rendered li[data-task=x] > p *,
+.theme-dark.octagon-completed-task-strikethrough-match-checkbox-color .markdown-rendered li[data-task=X] > p *,
+.theme-dark.octagon-completed-task-strikethrough-match-checkbox-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=x],
+.theme-dark.octagon-completed-task-strikethrough-match-checkbox-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=X],
+.theme-dark.octagon-completed-task-strikethrough-match-checkbox-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=x] *,
+.theme-dark.octagon-completed-task-strikethrough-match-checkbox-color .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=X] * {
   color: var(--checklist-done-color);
 }
 
@@ -1322,6 +1350,16 @@ settings:
       -
         label: Purple
         value: octagon-checkbox-purple
+  -
+    id: octagon-completed-task-strikethrough
+    title: Strikethrough completed tasks
+    description: Show a strikethrough on completed checkbox text
+    type: class-toggle
+  -
+    id: octagon-completed-task-strikethrough-match-checkbox-color
+    title: Match checkbox color for strikethrough
+    description: Use the checked checkbox color for the completed task strikethrough
+    type: class-toggle
   -
     id: octagon-internal-link-color
     title: Internal link color

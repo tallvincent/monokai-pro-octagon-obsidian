@@ -297,6 +297,16 @@ settings:
         label: Purple
         value: octagon-checkbox-purple
   -
+    id: octagon-completed-task-strikethrough
+    title: Strikethrough completed tasks
+    description: Show a strikethrough on completed checkbox text
+    type: class-toggle
+  -
+    id: octagon-completed-task-strikethrough-match-checkbox-color
+    title: Match checkbox color for strikethrough
+    description: Use the checked checkbox color for the completed task strikethrough
+    type: class-toggle
+  -
     id: octagon-internal-link-color
     title: Internal link color
     description: Color for resolved internal links
